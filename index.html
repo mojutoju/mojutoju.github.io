@@ -4,33 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="keywords" content="graphic design, UI/UX design, web design, motion design, illustration design, 3D design, design, web development, user interface, user experience, illustrations, graphics, animations, 3D modeling">
     <title>Welcome to my Portfolio</title>
-    <link rel="icon" href="img/logo.svg" type="image/png" />
+    <link rel="icon" href="img/tmlogo.png" type="image/png" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;500;700&display=swap" />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+                
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+  rel="stylesheet"
+/>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-
-      <style>
-
-
-  body{
-      font-family: 'Helvetica';
-      background: url('img/bgg.png');   background-position: center;  background-repeat: no-repeat; background-size: cover;
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+ body{
+      font-family: 'Product Sans';
+      background: url('img/bg.svg');   background-position: center;  background-repeat: no-repeat; background-size: cover;
   }
 
-        #intro {
-          background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
-          height: 100vh;
-        }
+
+  .navbar {
+    --mdb-navbar-box-shadow: none
+    --mdb-navbar-padding-top: 0.5625rem;
+    --mdb-navbar-brand-img-margin-right: none;
+    box-shadow: none;
+    padding-top: none;
+    background-color: #E7F5FF;
+}
 
         /* Height for devices larger than 576px */
         @media (min-width: 992px) {
@@ -39,9 +48,7 @@
           }
         }
 
-        .navbar .nav-link {
-          color: #000 !important;
-        }
+     
 
 
         .navbar-nav > li{
@@ -95,24 +102,11 @@
           }
 
           .navbar .nav-link {
-            color: #fff !important;
+            color: #000 ;
           }
 
 
 
-
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 1; /* Firefox */
-  }
-
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: white;
-  }
-
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: white;
-  }
 
 
   /* Style the tab */
@@ -176,10 +170,6 @@
         margin: 30px auto;
     }
 
-    .navbar .nav-link {
-      color: #000 !important;
-    }
-
 
     .navbar-nav > li{
 padding-left:10px;
@@ -231,10 +221,7 @@ margin-right:20px;
         }
       }
 
-      .navbar .nav-link {
-        color: #0D58B8;
-      }
-
+     
 
 
       #myBtn {
@@ -264,9 +251,6 @@ html{
 }
 
 
-.navbar .nav-link {
-      color: #fff !important;
-    }
 
 
     .navbar-nav > li{
@@ -293,1243 +277,809 @@ margin-right:20px;
     color:#fff;
     opacity:1;
   }
-          </style>
-</head>
 
+
+  .nav-tabs .nav-link:hover,
+      .nav-tabs .nav-link.active {
+        background-color: #D40F7D;
+        color: white;
+        border-radius: 30px;
+        border: none;
+      }
+    
+
+
+      .nav-tabs .nav-link {
+font-size: 15px;
+margin-left:50px;
+margin-right:50px;
+text-align:center;
+      }
+
+  </style>
+
+</head>
 
 <body>
 
 
+    
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar d-none" style="z-index: 2000; ">
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-          <!-- Navbar brand -->
-          <a class="navbar-brand nav-link" target="_blank" href="index.html">
-          <img src="img/logo.svg" class="img-fluid" width="200px">
-          </a>
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation" style="background-color:white;">
-            <i class="fas fa-bars" style="font-size:25px; color: #101024;"></i>
+          <a class="navbar-brand" href="#"> <img src="img/tmlogo.png" class="img-fluid" width="80px"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color:#D40F7D; "
+          >
+            <i class="fas fa-bars" style="color:white;"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="index.php" >Home</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link active" aria-current="page" href="#" style="color:black;">Home</a>
+              </li>
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="#aboutme" style="color:black;">About Me</a>
+              </li>
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="#services" style="color:black;">Services </a>
+              </li>
+              
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="#works" style="color:black;">Works </a>
               </li>
 
-
-
-
-
-
-                  <li class="nav-item">
-                              <a class="nav-link" href="#about" rel="nofollow"
-                              >About Me</a>
-                            </li>
-
-
-
-
-
-
-                                <li class="nav-item">
-                                            <a class="nav-link" href="#skills" rel="nofollow"
-                                            >Skills Armory </a>
-                                          </li>
-
-
-              <li class="nav-item">
-                <a class="nav-link" href="#projects" rel="nofollow"
-                >Projects</a>
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="#" style="color:black;">Contact </a>
               </li>
-
-
-
-                        
-
-
-
-
-        </ul>
-      </li>
-
 
             </ul>
-
 
             <form class="d-flex input-group w-auto">
 
-            <ul class="navbar-nav w-100 ">
-
-
-              <li class="nav-item " style="color:black;">
-                <a target="_blank" class="nav-link btn btn btn-lg" href="https://drive.google.com/file/d/1B5-xUhFm88jaOfMgaYQaAczOkV1V3eOp/view?usp=sharing" rel="nofollow" style="font-weight:bold; background-color:orange; color:black;">
-                  Hire Me!
-                </a>
-              </li>
-
-            </ul>
-
-</form>
+                <ul class="navbar-nav w-300 ">
+    
+    
+                  <li class="nav-item " style="color:white;">
+                    <a target="_blank" class="nav-link btn btn btn-lg" href="https://drive.google.com/file/d/1B5-xUhFm88jaOfMgaYQaAczOkV1V3eOp/view?usp=sharing" rel="nofollow" style="font-weight:bold; padding: 13px; font-size: 15px; background-color:#D40F7D; color:white; font-weight:bold; border-radius:10px;">
+                    Download CV
+                    </a>
+                  </li>
+    
+                </ul>
+    
+    </form>
 
           </div>
         </div>
       </nav>
-      <!-- Navbar -->
+      
+
+
+    <div class="hero-bg" style="background: url('img/bg.svg');   background-position: left; min-height: auto; height: 100%; background-repeat: no-repeat; background-size: cover;">
+
+
+        <br>
+
+        <div class="container">
+  
+        
+  
+  
+        <br><br>
+  
+        <p class="textwithout "  data-aos="fade-left" style="  color:black; font-size:19px; text-align: center;"> Need a designer ? I'm your <strong style="color:white; border: 2px solid #FE4367; background-color: #FE4367; border-radius:7px;"> GUY </strong></p>
+        <h1 class="textwithout animate__animated animate__slideInLeft" style="
+        font-size: 66px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: black;
+            line-height: 1.2;
+            letter-spacing: -2px;
+            text-transform: capitalize;
+            margin-bottom: 29px;
+            text-align:center;
+        ">
+  
+        Hello! I'm Moju Toju Samson</strong>
+  
+  
+            </h1>
+  
+            <h1 class="textwithout animate__animated animate__slideInUp" style="
+            font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 14px;
+                color: black;
+                letter-spacing: -2px;
+                text-transform:none;
+                margin-bottom: 29px;
+                text-align:center;
+            ">
+      Senior Graphic <strong style="color:#D40F7D;">Designer</strong> & <strong style="color:#814ECC;"> Illustrator </strong> 
+      
+      
+                </h1>
+      
+  
+  
+            <p class="animate__animated animate__slideInLeft" style=" color:black; text-align:center; font-size:19px; ">
+                I'm a Senior Designer who specialises in Graphics, UI/UX, Web, Illustrations and other marketing designs      </p>
+  
+
+                <center> 
+
+                    <a href="#works" class="btn btn-lg animate__animated animate__slideInLeft w-80" style="background-color: #F96E88; color:white; font-size: 18px; border-radius:30px; text-transform: none;"> View Works 
+                    </a>
+          
+          
+                    <a  href="https://drive.google.com/file/d/1B5-xUhFm88jaOfMgaYQaAczOkV1V3eOp/view?usp=sharing" class="btn btn-lg w-80  animate__animated animate__slideInLeft" style="color:#7FB5D8; font-size: 18px; border: 2px solid #7FB5D8; border-radius:30px; text-transform: none;"> Hire Me </a>
+          
+                </center>
+           
+            </div>
+  
+  
+  
+  
+  
+  
 
 
 
+            <center>
+
+                <img class="img-fluid" src="img/pic.png" style="width:600px;">
+            </center>
+                     
+  
+            </div>
+  
+  
+  
+
+<br>
 
 
-            <div class="hero-bg" style="background: url('img/bg.png');   background-position: left; min-height: 700px; height: 892px; background-repeat: no-repeat; background-size: cover;">
-     
-
-      <br>
-
-      <div class="container">
-
-      <div class="row ">
+<div class="container" id="aboutme">
 
 
-      <div class="col-xl-6 col-lg-6 col-md-6 " >
+      
+
+    <div class="row">
 
 
-      <br><br>
-
-      <p class="textwithout animate__animated animate__slideInLeft" style="  color:white; letter-spacing:1.5px;"> TAKE YOUR BUSINESS TO THE NEXT LEVEL.</p>
-      <h1 class="textwithout animate__animated animate__slideInLeft" style="
-      font-size: 70px;
-          font-weight: 700;
-          margin-bottom: 14px;
-          color: white;
-          line-height: 1.2;
-          text-transform: capitalize;
-          margin-bottom: 29px
-      ">
-
-      Hello, I'm <strong style="color:orange;"> Moju  Toju Samson.</strong>
+        <div class="col-md-4 sm-3 mb-3">
+    
+            <img src="img/pic2.png" class="img-fluid">
+        </div>
 
 
-          </h1>
+        
+        <div class="col-md-7 sm-3 mb-4">
+    
+            <h1 style="font-weight:800; color: black; font-size: 55px;"> About Me </h1>
+
+            <p>
+                I am a highly skilled and experienced Senior Designer with 10 years solid experience and a strong background in UI/UX , Graphics, Illustrations, branding, presentation and other marketing designs. I have a proven track record of creating visually stunning and effective designs that drive business goals, including the creation of bespoke PowerPoint templates for high-end clients and custom covers. I am proficient in a variety of design tools, including Adobe Creative Suite, Microsoft Office, and I have experience in both print and web design. </p>
+
+                <p>
+As a Senior Designer,  I am committed to staying up to date on the latest design trends and techniques and I am always looking for new opportunities  to grow and develop my skills. I am excited about the opportunity to bring my expertise and passion to a new team and contribute to the success of the organization
+            </p>
+        </div>
+    
+    </div>
+    
+    
+    
+
+</div>
+
+
+<br>
+
+
+<div class="hero-bg" style="background: url('img/bg.svg');   background-position: left; min-height: auto; height: 100%; background-repeat: no-repeat; background-size: cover;">
+
+
+<div class="container" id="services">
+
+    <center>
+        <button class="btn btn-lg" style="border-radius: 25px; background-color:#FACAD3; color:#D40F7D; font-weight: 800; font-size:16px;"> SERVICES  </button>
+    </center>
+    <br>
+
+    <h1 style="font-weight:800; color: black; font-size: 45px; text-align:center; "> What Can I Do For You </h1>
+    <br>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-3 animate__animated animate__slideInLeft">
+
+
+            <div class="card" style="padding:25px; border-radius: 10px; color:black;">
+
+                <h2 style="color:#D40F7D; font-weight:bold;"> Graphic Design</h2>
+
+                <p> 
+                    I offer professional and creative graphic design services for a variety of clients, including small businesses, startups, and corporations. Whether you need a logo, brochure, branding, illustration, presentation designs or social media graphics, I have the skills and experience to bring your vision to life. I work closely with my clients to understand their needs and develop designs that accurately reflect their brand image.
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-4 mb-3 animate__animated animate__slideInUp">
+
+
+            <div class="card" style="padding:25px; border-radius: 10px; color:black; height:100%;">
+
+                <h2 style="color:#D40F7D; font-weight:bold;"> Web Design</h2>
+
+                <p> 
+                    I also specialize in UI/UX design, helping businesses create user-friendly and visually appealing websites and applications. My design approach is driven by research and data, ensuring that I deliver the best possible user experience for your customers. I believe that good UI/UX design is not only aesthetically pleasing, but also intuitive and efficient.
+                </p>
+            </div>
+
+
+        </div>
+
+
+        <div class="col-md-4 mb-3 animate__animated animate__slideInRight">
+
+
+            <div class="card" style="padding:25px; border-radius: 10px; color:black; height:100%;">
+
+                <h2 style="color:#D40F7D; font-weight:bold;"> Motion Design</h2>
+
+                <p> 
+                    I also offer motion design services, creating engaging and impactful animations, videos, and graphics for a variety of media. From explainer videos and product demos to animated logos and social media graphics, I have the skills and experience to bring your ideas to life with motion. Whether you're looking to create a video ad or simply add some visual interest to your website, I have the expertise to get the job done.
+                </p>
+            </div>
+
+
+        </div>
 
 
 
-
-          <p class="animate__animated animate__slideInLeft" style=" color:white; font-size:19px; ">
-          I'm a techpreneur with the passion to design and develop software solutions and create eye-catchy design contents and illustrations for companies and businesses.    </p>
-
-          <a href="#watchvideo" class="btn btn-lg btn-outline-warning animate__animated animate__slideInLeft" style="background-color: orange; color:black; font-size: 18px; "> WATCH VIDEO <i class="fa fa-chevron-circle-right" style="font-size: 25px;"> </i>
-          </a>
+        <div class="col-md-4 mb-3 animate__animated animate__slideInBottom">
 
 
-          <a  href="https://drive.google.com/file/d/1B5-xUhFm88jaOfMgaYQaAczOkV1V3eOp/view?usp=sharing" class="btn btn-lg btn-outline-warning animate__animated animate__slideInLeft" style="color:orange; font-size: 18px;"> HIRE ME <i class="fa fa-chevron-circle-right" style="font-size: 25px;"> </i>
-          </a>
+            <div class="card" style="padding:25px; border-radius: 10px; color:black; height:100%;">
 
-          </div>
+                <h2 style="color:#D40F7D; font-weight:bold;"> UI/UX Design</h2>
 
-
-
-
-
-
-      <div class="col-md-6 mb-3">
+                <p> 
+                    I also specialize in UI/UX design, helping businesses create user-friendly and visually appealing websites and applications. My design approach is driven by research and data, ensuring that I deliver the best possible user experience for your customers. I believe that good UI/UX design is not only aesthetically pleasing, but also intuitive and efficient.
+                </p>
+            </div>
 
 
-          </div>
+        </div>
 
-          </div>
-
-          </div>
-
-          </div>
+        <div class="col-md-4 mb-3 animate__animated animate__slideInLeft">
 
 
+            <div class="card" style="padding:25px; border-radius: 10px; color:black; height:100%;">
+
+                <h2 style="color:#D40F7D; font-weight:bold;"> Illustration Design</h2>
+
+                <p> 
+                    I offer illustration design services to bring your ideas to life through visual storytelling. I create custom illustrations that are both beautiful and functional, capturing the essence of your brand and delivering your message in a unique and memorable way. Whether you're looking to illustrate a children's book or create a custom character for your business, I have the skills and experience to bring your vision to life.
+                </p>
+            </div>
+
+
+        </div>
 
 
 
-      <section id="about">
+        <div class="col-md-4 mb-3 animate__animated animate__slideInUp">
 
 
-      <br><br>
-      <br><br>
+            <div class="card" style="padding:25px; border-radius: 10px; color:black; height:100%;">
+
+                <h2 style="color:#D40F7D; font-weight:bold;"> 3D Design</h2>
+
+                <p> 
+                    I offer professional 3D design services for a variety of clients, including architecture, product design, and animation. With a keen eye for detail and a passion for creating visually stunning designs, I work closely with my clients to bring their ideas to life in 3D. From architectural renderings and product prototypes to animated characters and visual effects, I have the skills and experience to create stunning designs that accurately reflect your vision.
+                </p>
+            </div>
 
 
-      <div class="container animate__animated animate__slideInUp">
+        </div>
+
+
+    </div>
+
+</div> 
+</div>
+
+<br><br>
+
+
+<div class="container" id="works">
+
+    <h1 style="text-align:center; font-weight:800;"> 
+        Check out some of my works
+    </h1>
+
+    
+
+<center>    <!-- Tabs navs -->
+<ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="ex1-tab-1"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-1"
+        aria-selected="true"
+        >Graphic Design </a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-2"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-2"
+        role="tab"
+        aria-controls="ex1-tabs-2"
+        aria-selected="false"
+        >UI/UX Design</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-3"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        >Web Design</a>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="ex1-tab-4"
+          data-mdb-toggle="tab"
+          href="#ex1-tabs-4"
+          role="tab"
+          aria-controls="ex1-tabs-4"
+          aria-selected="false"
+          >Illustrations</a>
+      </li>
+
+
+        <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="ex1-tab-5"
+          data-mdb-toggle="tab"
+          href="#ex1-tabs-5"
+          role="tab"
+          aria-controls="ex1-tabs-5"
+          aria-selected="false"
+          >3D Design</a>
+      </li>
+
+
+  </ul>
+  <!-- Tabs navs -->
+
+  </center>
+
+  <br>
+  
+  <!-- Tabs content -->
+  <div class="tab-content" id="ex1-content">
+    <div
+      class="tab-pane fade show active"
+      id="ex1-tabs-1"
+      role="tabpanel"
+      aria-labelledby="ex1-tab-1"
+    >
+  
+
+      <h5 style="color:black;"> Logo Designs </h5>
+      <hr style="color:black; background:white;">
+
 
       <div class="row">
 
+    <div class="col-md-3 mb-3">
 
-      <div class="col-md-6 mb-3">
 
+    <img src="img/logo/bigbites.png" class="img-fluid">
 
-      <img src="img/aboutme.png" class="img-fluid">
+    </div>
 
-      </div>
-
-
-
-      <div class="col-md-6 mb-3">
-
-
-
-      <p class="textwithout animate__animated animate__slideInLeft" style="  color:white; letter-spacing:1.5px;"> ABOUT ME</p>
-      <h1 class="textwithout animate__animated animate__slideInLeft" style="
-      font-size: 42px;
-          font-weight: 700;
-          margin-bottom: 14px;
-          color: white;
-          line-height: 1.2;
-          text-transform: capitalize;
-          margin-bottom: 29px
-      ">
-
-      I'm a <strong style="color:orange;"> Senior Graphic Designer (Brand, Content, Web, Visual), UI/UX Designer.</strong>
-
-
-          </h1>
-
-
-
-          <p style="color:white;"> Graphic Design </p>
-
-          <div class="progress" style="height:20px; border-radius: 30px;">
-
-        <div class="progress-bar" style="width:96%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      <br>
-
-
-      <p style="color:white;"> UI UX Design </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:92%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-
-      <br>
-
-
-      <p style="color:white;"> Front End Developer (Material Design Bootstrap / JS) </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:98%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-
-      <br>
-
-
-      <p style="color:white;"> Visual Design </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:80%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-
-
-
-
-      <br>
-
-
-      <p style="color:white;"> Video Editing </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:80%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-
-
-
-
-      <br>
-
-
-      <p style="color:white;"> 3D Modelling </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:78%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-      </div>
-
-
-
-
-
-
-      </div>
-
-
-
-      </div>
-
-
-
-          </div>
-
-
-
-
-      </section>
-
-
-
-
-      </div>
-
-
-
-
-      <div class="hero-bg" style="background: url('img/adobe.png');   background-position: left; height:980px;   background-repeat: no-repeat; background-size: cover;">
-
-
-      <br><br><br><br>
-
-      <div class="container" id="skills">
-
-
-      <p class="textwithout animate__animated animate__slideInLeft" style="  color:white; letter-spacing:1.5px;"> CHECK OUT MY TOOLBOX.</p>
-      <h1 class="textwithout animate__animated animate__slideInLeft" style="
-      font-size: 54px;
-          font-weight: 700;
-          margin-bottom: 14px;
-          color: white;
-          line-height: 1.2;
-          text-transform: capitalize;
-          margin-bottom: 29px
-      ">
-
-      DESIGN <strong style="color:orange;"> ARMORY </strong>
-
-
-          </h1>
-
-
-
-      <div class="row ">
-
-
-      <div class="col-xl-5 col-lg-6 col-md-6 " >
-
-
-
-
-      <div class="row">
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInLeft">
-      <p style="color:white;"> Adobe Photoshop </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:96%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInRight">
-      <p style="color:white;"> Adobe Illustrator </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:85%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInLeft">
-      <p style="color:white;"> Adobe After Effects </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:75%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInRight">
-      <p style="color:white;"> Adobe Premiere Pro </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:78%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInLeft">
-      <p style="color:white;"> Adobe InDesign </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:85%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInRight">
-      <p style="color:white;"> Figma </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:90%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInLeft">
-      <p style="color:white;"> Autodesk Maya </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:70%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInRight">
-      <p style="color:white;"> Blender </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:78%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInRight">
-      <p style="color:white;"> Affinity Designer </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:100%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
 
-      </div>
-
-
-
-
-
-      <div class="col-md-6 mb-3 animate__animated animate__slideInRight">
-      <p style="color:white;"> Affinity Photo </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:80%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-          </div>
-
-
-
-
-
-
-
-          </div>
-
-          </div>
-
-          </div>
-
-
-
-
-      <BR>
-
-
-
-
-      </div>
-
-
-      </div>
-
-      </div>
-
-
-
-
-
-      <br><br><br><br>
-
-
-      <div class="hero-bg" style="background: url('img/code.png');   background-position: left;  height:980px;   background-repeat: no-repeat; background-size: cover;">
-
-
-      <br><br><br><br>
-
-      <div class="container">
-
-      <section style="position:right;">
-      <p class="textwithout animate__animated animate__slideInLeft" style="  color:white; letter-spacing:1.5px;"> CHECK OUT MY TOOLBOX.</p>
-      <h1 class="textwithout animate__animated animate__slideInLeft" style="
-      font-size: 54px;
-          font-weight: 700;
-          margin-bottom: 14px;
-          color: white;
-          line-height: 1.2;
-          text-transform: capitalize;
-          margin-bottom: 29px
-      ">
-
-      DEVELOPER <strong style="color:orange;"> ARMORY </strong>
-
-
-          </h1>
-
-
-
-      <div class="row ">
-
-
-      <div class="col-xl-5 col-lg-6 col-md-6 " >
-
-
-
-
-      <div class="row animate__animated animate__slideInLeft">
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> Bootstrap 3/4/5</p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:96%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> Material Design Bootstrap </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:95%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> HTML5/CSS3 </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:95%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> PHP </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:92%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
+    <div class="col-md-3 mb-3">
 
 
+    <img src="img/logo/geebeautymagic.png" class="img-fluid">
 
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> MySQL </p>
+    </div>
 
-      <div class="progress" style="height:20px; border-radius: 30px;">
 
-      <div class="progress-bar" style="width:80%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> Javascript </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:65%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> React (JS Framework) </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:48%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> Visual Studio Code</p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:95%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-
-      <div class="col-md-6 mb-3">
-      <p style="color:white;"> API Integration </p>
-
-      <div class="progress" style="height:20px; border-radius: 30px;">
-
-      <div class="progress-bar" style="width:80%;height:20px; border-radius: 30px; background-color: orange;"></div>
-      </div>
-
-
-      </div>
-
-
-
-
-
-
+    <div class="col-md-3 mb-3">
 
 
+    <img src="img/logo/firstwatchcafe.png" class="img-fluid">
 
-          </div>
+    </div>
 
 
+    <div class="col-md-3 mb-3">
 
 
+    <img src="img/logo/chopbig.png" class="img-fluid">
 
+    </div>
 
 
-          </div>
 
-          </div>
+    <div class="col-md-3 mb-3">
 
-          </div>
 
-      </div>
-
-      <br><br><br>
-          <section>
-
-      <div class="container">
-
-      <div style="margin-bottom:50px"> </div>
-
-
-      <h1 class="animate__animated animate__slideInDown" style="font-weight:800; color:orange; text-align:center; font-size: 56px;">  EXPERTISE AREA </h1>
-
-      <br>
-
-      <div class="row">
-
-
-      <div class="col-md-4 mb-3 ">
-
-      <div class="card animate__animated animate__slideInLeft" style="padding:30px;  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); border-radius:10px; background-color: orange;">
-
-      <h1> <i class="fa fa-paint-brush" style="color:black;"> </i> </h1>
-      <h4 style="color:black; font-weight:800; "> Graphic Design (9 years) </h4>
-
-      <p>
-      Creating visual concepts, using computer software, to communicate ideas that inspire, inform, and captivate consumers. Developing an overall layout and production design for various applications such as advertisements, brochures, magazines,logos, posters, music artworks and illustrations.
-      </p>
-      </div>
-
-
-      </div>
-
-
-
-      <div class="col-md-4 mb-3">
-
-      <div class="card animate__animated animate__slideInUp" style="padding:30px;  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); border-radius:10px; background-color: white;">
-
-
-      <h1> <i class="fa fa-code" style="color:black;"> </i> </h1>
-      <h4 style="color:black; font-weight:800; "> Web Design & Development (3 years) </h4>
-
-      <p>
-      Building beautiful web contents and frameworks to suite the purpose of a client business and integrating logical and functional backend programming to make it a full web solution.
-      </p>
-      </div>
-
-
-
-      <br>
-
-
-      <div class="card animate__animated animate__slideInUp" style="padding:30px;  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); border-radius:10px; background-color: white;">
-
-      <h1> <i class="fa fa-object-group" style="color:black;"> </i> </h1>
-
-      <h4 style="color:black; font-weight:800; "> UI / UX Design (5 years) </h4>
-
-      <p>
-      Designing of user interfaces for websites,mobile applications and software with the focus on maximizing usability and the user experience.
-
-
-      </p>
-      </div>
+    <img src="img/logo/safeears.png" class="img-fluid">
 
-      </div>
-
-
-
-
-
+    </div>
 
-      <div class="col-md-4 mb-3">
 
-      <div class="card animate__animated animate__slideInRight" style="padding:30px;  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); border-radius:10px; background-color: orange;">
 
-      <h1> <i class="fa fa-file-video" style="color:black;"> </i> </h1>
-      <h4 style="color:black; font-weight:800; "> Visual Design (9 years) </h4>
+    <div class="col-md-3 mb-3">
 
-      <p>
-      Creating and translating people’s ideas and brings them to life by creating a visual presentation which is appealing to customers or clients making people’s ideas and businesses more professional.
-      </p>
-      </div>
-
-
-      </div>
 
+    <img src="img/logo/teeschow.png" class="img-fluid">
 
+    </div>
 
-      </div>
 
 
-      </div>
+    <div class="col-md-3 mb-3">
 
-      </section>
 
+    <img src="img/logo/synergy.png" class="img-fluid">
 
-      <br><br>
+    </div>
 
 
+    <div class="col-md-3 mb-3">
 
-      <section id="projects">
 
-      <div class="container">
-      <h2 style="color:white; font-size: 28px;">
-      R E C E N T
-      </h2>
-      <h2 style="color:orange; font-size: 68px; font-weight:800;">
-      WORKS
-      </h2>
+    <img src="img/logo/sportstv.png" class="img-fluid">
 
+    </div>
 
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Graphic Design  </button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">UI UX Design</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Web Design & Development</button>
-        <button class="tablinks" onclick="openCity(event, 'Nigeria')">3D Modelling & Motion Graphics </button>
       </div>
-
-      <br>
 
-      <div id="London" class="tabcontent ">
 
 
+      <h5 style="color:black;"> Branding Designs </h5>
+      <hr style="color:black; background:white;">
 
-        <h5 style="color:white;"> Logo Designs </h5>
-        <hr style="color:white; background:white;">
 
 
         <div class="row">
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-4 mb-3">
 
 
-      <img src="img/logo/bigbites.png" class="img-fluid">
-
-      </div>
-
-
-      <div class="col-md-3 mb-3">
-
-
-      <img src="img/logo/geebeautymagic.png" class="img-fluid">
+      <img src="img/branding/1.jpg" class="img-fluid">
 
       </div>
 
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-4 mb-3">
 
 
-      <img src="img/logo/firstwatchcafe.png" class="img-fluid">
+      <img src="img/branding/2.jpg" class="img-fluid">
 
       </div>
 
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-4 mb-3">
 
 
-      <img src="img/logo/chopbig.png" class="img-fluid">
+      <img src="img/branding/3.jpg" class="img-fluid">
 
       </div>
 
 
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-4 mb-3">
 
 
-      <img src="img/logo/safeears.png" class="img-fluid">
-
-      </div>
-
-
-
-      <div class="col-md-3 mb-3">
-
-
-      <img src="img/logo/teeschow.png" class="img-fluid">
+      <img src="img/branding/4.jpg" class="img-fluid">
 
       </div>
 
 
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-4 mb-3">
 
 
-      <img src="img/logo/synergy.png" class="img-fluid">
+      <img src="img/branding/5.jpg" class="img-fluid">
+
+      </div>
+
+      <div class="col-md-4 mb-3">
+
+
+      <img src="img/branding/6.jpg" class="img-fluid">
 
       </div>
 
 
-      <div class="col-md-3 mb-3">
 
-
-      <img src="img/logo/sportstv.png" class="img-fluid">
-
-      </div>
 
         </div>
 
 
+<br>
 
-        <h5 style="color:white;"> Branding Designs </h5>
-        <hr style="color:white; background:white;">
-
-
-
-          <div class="row">
-
-        <div class="col-md-4 mb-3">
+        <h5 style="color:black;"> Brochure Designs </h5>
+        <hr style="color:black; background:white;">
 
 
-        <img src="img/branding/1.jpg" class="img-fluid">
+            <div class="row">
 
-        </div>
-
-
-        <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
 
 
-        <img src="img/branding/2.jpg" class="img-fluid">
+          <img src="img/brochures/2.jpg" class="img-fluid">
 
-        </div>
-
-
-        <div class="col-md-4 mb-3">
+          </div>
 
 
-        <img src="img/branding/3.jpg" class="img-fluid">
-
-        </div>
+          <div class="col-md-6 mb-3">
 
 
+          <img src="img/brochures/1.jpg" class="img-fluid">
 
-        <div class="col-md-4 mb-3">
-
-
-        <img src="img/branding/4.jpg" class="img-fluid">
-
-        </div>
+          </div>
 
 
-
-        <div class="col-md-4 mb-3">
-
-
-        <img src="img/branding/5.jpg" class="img-fluid">
-
-        </div>
-
-        <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
 
 
-        <img src="img/branding/6.jpg" class="img-fluid">
+          <img src="img/brochures/3.jpg" class="img-fluid">
 
-        </div>
+          </div>
 
 
+          <div class="col-md-6 mb-3">
 
+
+          <img src="img/brochures/4.jpg" class="img-fluid">
 
           </div>
 
 
 
 
-          <h5 style="color:white;"> Brochure Designs </h5>
-          <hr style="color:white; background:white;">
+        </div>
 
 
-              <div class="row">
 
-            <div class="col-md-6 mb-3">
+<br>
 
 
-            <img src="img/brochures/2.jpg" class="img-fluid">
+            <h5 style="color:black;"> Social Media Designs </h5>
+            <hr style="color:black; background:white;">
 
-            </div>
 
+                <div class="row">
 
-            <div class="col-md-6 mb-3">
+              <div class="col-md-3 mb-3">
 
 
-            <img src="img/brochures/1.jpg" class="img-fluid">
+              <img src="img/socialmedia/1.jpg" class="img-fluid">
 
-            </div>
+              </div>
 
 
-            <div class="col-md-6 mb-3">
+              <div class="col-md-3 mb-3">
 
 
-            <img src="img/brochures/3.jpg" class="img-fluid">
+                  <img src="img/socialmedia/4.jpg" class="img-fluid">
 
-            </div>
+              </div>
 
 
-            <div class="col-md-6 mb-3">
+              <div class="col-md-3 mb-3">
 
 
-            <img src="img/brochures/4.jpg" class="img-fluid">
+                <img src="img/socialmedia/3.jpg" class="img-fluid">
 
-            </div>
+              </div>
 
 
+              <div class="col-md-3 mb-3">
 
 
-          </div>
-
-
-
-
-
-
-              <h5 style="color:white;"> Social Media Designs </h5>
-              <hr style="color:white; background:white;">
-
-
-                  <div class="row">
-
-                <div class="col-md-3 mb-3">
-
-
-                <img src="img/socialmedia/1.jpg" class="img-fluid">
-
-                </div>
-
-
-                <div class="col-md-3 mb-3">
-
-
-                    <img src="img/socialmedia/4.jpg" class="img-fluid">
-
-                </div>
-
-
-                <div class="col-md-3 mb-3">
-
-
-                  <img src="img/socialmedia/3.jpg" class="img-fluid">
-
-                </div>
-
-
-                <div class="col-md-3 mb-3">
-
-
-                      <img src="img/socialmedia/5.jpg" class="img-fluid">
-
-                </div>
-
-
-
-                          <div class="col-md-3 mb-3">
-
-
-                                <img src="img/socialmedia/6.jpg" class="img-fluid">
-
-                          </div>
-
-
-
-                                    <div class="col-md-3 mb-3">
-
-
-                                          <img src="img/socialmedia/7.jpg" class="img-fluid">
-
-                                    </div>
-
-
-
-                                              <div class="col-md-3 mb-3">
-
-
-                                                    <img src="img/socialmedia/8.jpg" class="img-fluid">
-
-                                              </div>
-
-
-
-                                                        <div class="col-md-3 mb-3">
-
-
-                                                              <img src="img/socialmedia/9.jpg" class="img-fluid">
-
-                                                        </div>
+                    <img src="img/socialmedia/5.jpg" class="img-fluid">
 
               </div>
 
 
 
+                        <div class="col-md-3 mb-3">
 
 
+                              <img src="img/socialmedia/6.jpg" class="img-fluid">
 
-              <h5 style="color:white;"> Package Designs </h5>
-              <hr style="color:white; background:white;">
+                        </div>
 
 
 
-              <div class="row">
+                                  <div class="col-md-3 mb-3">
 
-              <div class="col-md-4 mb-3">
 
-              <img src="img/package/1.jpg" class="img-fluid">
+                                        <img src="img/socialmedia/7.jpg" class="img-fluid">
 
-              </div>
+                                  </div>
 
 
-              <div class="col-md-4 mb-3">
 
-              <img src="img/package/2.jpg" class="img-fluid">
+                                            <div class="col-md-3 mb-3">
 
-              </div>
 
+                                                  <img src="img/socialmedia/8.jpg" class="img-fluid">
 
-              <div class="col-md-4 mb-3">
-              <img src="img/package/3.jpg" class="img-fluid">
+                                            </div>
 
-              </div>
 
 
+                                                      <div class="col-md-3 mb-3">
 
-              <div class="col-md-4 mb-3">
 
-                  <img src="img/package/4.jpg" class="img-fluid">
-
-              </div>
-
-
-
-              <div class="col-md-4 mb-3">
-
-                  <img src="img/package/5.jpg" class="img-fluid">
-
-              </div>
-
-
-
-
-
-              </div>
-
-
-
-
-
-
-                      <h5 style="color:white;"> Illustration Designs </h5>
-                      <hr style="color:white; background:white;">
-
-
-
-                      <div class="row">
-
-                      <div class="col-md-4 mb-3">
-
-                      <img src="img/illustration/2.jpg" class="img-fluid">
-
-                      </div>
-
-
-                      <div class="col-md-4 mb-3">
-
-              <img src="img/illustration/3.jpg" class="img-fluid">
-
-                      </div>
-
-
-                      <div class="col-md-4 mb-3">
-                  <img src="img/illustration/4.jpg" class="img-fluid">
-
-                      </div>
-
-
-
-                      <div class="col-md-4 mb-3">
-
-                          <img src="img/illustration/5.jpg" class="img-fluid">
-
-                      </div>
-
-
-
-                      <div class="col-md-4 mb-3">
-                <img src="img/illustration/6.jpg" class="img-fluid">
-
-                      </div>
-
-
-
-                              <div class="col-md-4 mb-3">
-                        <img src="img/illustration/7.jpg" class="img-fluid">
-
-                              </div>
-
-
-
-
-                                      <div class="col-md-4 mb-3">
-                                <img src="img/illustration/8.jpg" class="img-fluid">
-
-                                      </div>
-
-
-
-
-                                              <div class="col-md-4 mb-3">
-                                        <img src="img/illustration/9.jpg" class="img-fluid">
-
-                                              </div>
-
-
-
-
-                                                      <div class="col-md-4 mb-3">
-                                                <img src="img/illustration/1.jpg" class="img-fluid">
+                                                            <img src="img/socialmedia/9.jpg" class="img-fluid">
 
                                                       </div>
 
-
-                      </div>
-
+            </div>
 
 
 
-      <h5 style="color:white;"> Poster Designs </h5>
-      <hr style="color:white; background:white;">
+<br>
 
-      <div class="row">
+
+            <h5 style="color:black;"> Package Designs </h5>
+            <hr style="color:black; background:white;">
+
+
+
+            <div class="row">
+
+            <div class="col-md-4 mb-3">
+
+            <img src="img/package/1.jpg" class="img-fluid">
+
+            </div>
+
+
+            <div class="col-md-4 mb-3">
+
+            <img src="img/package/2.jpg" class="img-fluid">
+
+            </div>
+
+
+            <div class="col-md-4 mb-3">
+            <img src="img/package/3.jpg" class="img-fluid">
+
+            </div>
+
+
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/package/4.jpg" class="img-fluid">
+
+            </div>
+
+
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/package/5.jpg" class="img-fluid">
+
+            </div>
+
+
+
+
+
+            </div>
+
+
+<br>
+
+    <h5 style="color:black;"> Poster Designs </h5>
+    <hr style="color:black; background:white;">
+
+    <div class="row">
+
+    <div class="col-md-4 mb-3">
+
+    <img src="img/poster/1.jpg" class="img-fluid">
+
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+
+    <img src="img/poster/2.jpg" class="img-fluid">
+
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+
+    <img src="img/poster/3.jpg" class="img-fluid">
+
+    </div>
+
+
+
+    <div class="col-md-4 mb-3">
+
+    <img src="img/poster/4.png" class="img-fluid">
+
+    </div>
+
+
+
+    <div class="col-md-4 mb-3">
+
+    <img src="img/poster/5.jpg" class="img-fluid">
+
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+
+    <img src="img/poster/9.jpg" class="img-fluid">
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+<br>
+
+    <h5 style="color:black;"> Photo Manipulation </h5>
+    <hr style="color:black; background:white;">
+
+    <div class="row">
+
+
 
       <div class="col-md-4 mb-3">
 
-      <img src="img/poster/1.jpg" class="img-fluid">
-
-      </div>
-
-
-      <div class="col-md-4 mb-3">
-
-      <img src="img/poster/2.jpg" class="img-fluid">
-
-      </div>
-
-
-      <div class="col-md-4 mb-3">
-
-      <img src="img/poster/3.jpg" class="img-fluid">
+      <img src="img/photomanipulation/4.jpg" class="img-fluid">
 
       </div>
 
@@ -1537,601 +1087,675 @@ margin-right:20px;
 
       <div class="col-md-4 mb-3">
 
-      <img src="img/poster/4.png" class="img-fluid">
+      <img src="img/photomanipulation/3.jpg" class="img-fluid">
 
       </div>
 
+    <div class="col-md-4 mb-3">
 
+    <img src="img/photomanipulation/2.jpg" class="img-fluid">
 
-      <div class="col-md-4 mb-3">
-
-      <img src="img/poster/5.jpg" class="img-fluid">
-
-      </div>
-
-
-      <div class="col-md-4 mb-3">
-
-      <img src="img/poster/9.jpg" class="img-fluid">
-
-      </div>
+    </div>
 
 
 
 
 
-      </div>
+    <div class="col-md-4 mb-3">
+
+    <img src="img/photomanipulation/1.jpg" class="img-fluid">
+
+    </div>
 
 
+    <div class="col-md-4 mb-3">
 
-
-
-      <h5 style="color:white;"> Photo Manipulation </h5>
-      <hr style="color:white; background:white;">
-
-      <div class="row">
-
-
+        <img src="img/photomanipulation/5.jpg" class="img-fluid">
+    
+        </div>
+    
 
         <div class="col-md-4 mb-3">
 
-        <img src="img/photomanipulation/4.jpg" class="img-fluid">
+            <img src="img/photomanipulation/6.jpg" class="img-fluid">
+        
+            </div>
+        
 
-        </div>
 
+    </div>
 
 
-        <div class="col-md-4 mb-3">
 
-        <img src="img/photomanipulation/3.jpg" class="img-fluid">
+    </div>
 
-        </div>
-
-      <div class="col-md-4 mb-3">
-
-      <img src="img/photomanipulation/2.jpg" class="img-fluid">
-
-      </div>
-
-
-
-
-
-      <div class="col-md-4 mb-3">
-
-      <img src="img/photomanipulation/1.jpg" class="img-fluid">
-
-      </div>
-
-
-
-
-
-      </div>
-
-
-      </div>
-
-      <div id="Paris" class="tabcontent">
-
-      <div class="row">
-
-
-      <div class="col-md-6 mb-3">
-
-        <img src="img/uidesign/1.jpg" class="img-fluid">
-
-      <br><br>
-        <h5 style="color:white; font-weight:800;"> BetaWaka </h5>
-
-      <p style="color:white; ">
-      Betawaka is a travel alarm mobile application that alerts users when they get to their nearest destination of travel.
-      </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/pVQQBfIBVkiFtqcKfDoDQ5/BetaWaka?node-id=0%3A1"> Link to full project  </a>
-
-
-
-      <br>
-
-      <br>
-        <img src="img/uidesign/17.jpg" class="img-fluid">
-
-
-        <br><br>
-
-        <h5 style="color:white; font-weight:800;"> GameSquared (Mobile and Web)</h5>
-
-      <p style="color:white; ">
-      A cloud based multi-platform game application that gives users access to download their games via any console of their choice.
-
-
-      </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120947213/GameSquared"> Link to full project  </a>
-
-
-
-      <br><br><br>
-
-
-      <img src="img/uidesign/22.png" class="img-fluid">
-
-      <br><br>
-
-      <h5 style="color:white; font-weight:800;"> Modella</h5>
-
-      <p style="color:white; ">
-        Modella is an online web application that allows fashion enthusiasts, models to showcase and promote themselves or brand with just a click of a button.
-
-
-      </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120940485/Modella"> Link to full project  </a>
-
-
-      </div>
-
-
-
-
-
-      <div class="col-md-6 mb-3">
-
-        <img src="img/uidesign/10.jpg" class="img-fluid">
-
-      <br><br>
-        <h5 style="color:white; font-weight:800;"> Stery Mobile App </h5>
-
-      <p style="color:white; ">
-      A mobile application that centralizes on ARTS where users and artists can interact by selling, buying and auctioning artworks to the highest bidder.
-      </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/rE2Vfr0OnPVHUOxKVvypMe/Stery?node-id=0%3A1"> Link to full project  </a>
-
-
-      <br><br><br>
-
-
-          <img src="img/uidesign/15.jpg" class="img-fluid">
-      <br><br>
-        <h5 style="color:white; font-weight:800;"> Glamour</h5>
-
-      <p style="color:white; ">
-      Glamour is an online beauty and spa platform that provides clients with top-notch beauty treatment.
-
-
-      </p>
-
-
-
-      <br>
-
-
-      <img src="img/uidesign/14.png" class="img-fluid">
-
-      <br><br>
-
-      <h5 style="color:white; font-weight:800;"> Survival </h5>
-
-      <p style="color:white; ">
-      This is an abstract UI that represents nature and the explorers of the world.
-
-
-      </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120889289/SURVIVAL"> Link to full project  </a>
-
-
-      </div>
-
-
-
-
-
-      </div>
-
-
-
-
-      </div>
-
-      <div id="Tokyo" class="tabcontent">
-
-      <div class="row">
-
-      <div class="col-md-6 mb-3">
-
-      <img src="img/webdesign/4.jpg" class="img-fluid">
-
-      <br><br>
-      <h4 style="color:white; font-weight: 800;"> Project Smile  </h4>
-      <p style="color:white;">
-      Project Smile is an initiative by one of Nigeria’s leading dental clinics that seeks to impact the lives of those individuals unlucky to be affected by dental flaws that has had them stigmatized all their lives. These flaws range from over-crowded, protruding and discoloured teeth to far more complex cases. This scheme seeks to award one such deserving individual a chance in a life time to correct this and have the perfect teeth.
-      </p>
-
-      <p style="color: orange;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://www.projectsmileng.org"> Link to full project  </a>
-
-      </div>
-
-
-
-      <div class="col-md-6 mb-3">
-
-      <img src="img/webdesign/5.jpg" class="img-fluid">
-
-      <br><br>
-      <h4 style="color:white; font-weight: 800;"> Orthodontic Dental Care Enterprise </h4>
-      <p style="color:white;">
-      Orthodontic Dental Care Enterprise is a standalone e-commerce web application that allows users to purchase dental care products from different dental care brands and order, pay online.
-      </p>
-
-      <p style="color: orange;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://orthodonticdental.ng"> Link to full project  </a>
-
-      </div>
-
-
-
-
-      <div class="col-md-6 mb-3">
-
-      <div class="card" style="background-image: url('img/webdesign/2.png'); background-size:cover; background-position: center; height: 500px;">
-
-      </div>
-
-
-      <br><br>
-      <h4 style="color:white; font-weight: 800;"> SLEEKMEK CONSTRUCTION  </h4>
-      <p style="color:white;">
-      The SLEEKMEK Group is the parent Multidisciplinary company with interests in Architecture, Engineering, Facility and Project Management, Building and Road Construction. It is renowned for providing of providing bespoke solutions to the built environment. Its consultancy arm (Sleek Projects and Development Consultants) sleekconsultants.com are renowned for providing solutions in Architecture, Engineering, Facility and Project Management.
-      </p>
-
-      <p style="color: orange;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://sleekmek.com"> Link to full project  </a>
-
-      </div>
-
-
-
-
-
-
-
-
-      <div class="col-md-6 mb-3">
-
-      <div class="card" style="background-image: url('img/webdesign/6.jpg'); background-size:cover; background-position: center; height: 500px;">
-
-      </div>
-
-
-      <br><br>
-      <h4 style="color:white; font-weight: 800;"> AAA Planning and Designs </h4>
-      <p style="color:white;">
-        An Integrated Architectural Designer Firm With Great Work For Constructive Developments, Residential And Public , Health Structural Works.
-      </p>
-
-      <p style="color: orange;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
-
-      <a target="_blank" class="btn btn-primary" href="https://aaaplanninganddesigns.com"> Link to full project  </a>
-
-      </div>
-
-
-
-      </div>
-
-
-
-      </div>
-
-
-      <div id="Nigeria" class="tabcontent">
+    
+    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+    
 
         <div class="row">
 
-             <!--Grid column-->
-             <div class="col-md-4 mb-3">
 
-       <img src="img/animation/1.jpg" class="img-fluid">
-
-             </div>
-
-
-                 <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/2.jpg" class="img-fluid">
-
-             </div>
-
-
-
-                 <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/3.jpg" class="img-fluid">
-
-             </div>
-
-
-
-                 <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/4.jpg" class="img-fluid">
-
-             </div>
-
-                 <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/5.jpg" class="img-fluid">
-
-             </div>
-
-
-                 <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/6.jpg" class="img-fluid">
-
-             </div>
-
-
-           <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/7.jpg" class="img-fluid">
-
-             </div>
-
-
-           <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/8.jpg" class="img-fluid">
-
-             </div>
-
-
-
-           <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/9.jpg" class="img-fluid">
-
-             </div>
-
-           <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/10.jpg" class="img-fluid">
-
-             </div>
-
-
-           <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/11.jpg" class="img-fluid">
-
-             </div>
-
-           <!--Grid column-->
-             <div class="col-md-4 mb-3">
-
-       <img src="img/animation/12.jpg" class="img-fluid">
-
-             </div>
-
-           <!--Grid column-->
-
-
-             </div>
-
-
-      </div>
-
-      </div>
-
-      </section>
-
-      <br><br><br><br>
-      <section id="watchvideo">
-
-
-        <h1 class="animate__animated animate__slideInDown" style="font-weight:800; color:white; text-align:center; font-size: 56px;">  Watch  <strong style="color:orange;">Video Portfolio </strong>  </h1>
-        <h4  class="animate__animated animate__slideInUp" style="color:white; text-align:center;">
-      Get to know me better and what i can offer.
-      </h4>
-        <br>
-
-      <div class="container">
-      <div class="embed-responsive embed-responsive-16by9">
-      <iframe  class="embed-responsive-item"  width="560" height="315" src="https://www.youtube.com/embed/i8O4nyTbPXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div> </div>
-
-      </section>
-
-
-      <br><br><br>
-
-
-
-
-          <!-- Footer -->
-          <footer class="bg text-center text-white" style="background: darkpurple">
-            <!-- Grid container -->
-            <div class="container p-4">
-
-              <p style="color: white; text-align:center;"> Connect with me via social media links </p>
-              <!-- Section: Social media -->
-              <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://web.facebook.com/tojumoju" role="button"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.twitter.com/itss_toju" role="button"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-
-
-
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/mojutoju" role="button"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/mojutoju" role="button"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.github.com/mojutoju" role="button"
-                  ><i class="fab fa-github"></i
-                ></a>
-
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.behance.net/mojutojusamson" role="button"
-                  ><i class="fab fa-behance"></i
-                ></a>
-
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://wa.me/+44769382796" role="button"
-                  ><i class="fab fa-whatsapp"></i
-                ></a>
-
-
-                          <!-- Github -->
-                          <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="mailto:benmoju@gmail.com" role="button"
-                            ><i class="fab fa-google"></i
-                          ></a>
-
-              </section>
-              <!-- Section: Social media -->
-
-
-
-
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2020 Copyright:
-              <a class="text-white" href="index.html">Moju Toju Portfolio. </a>
+           
+
+          
+            <div class="col-md-6 mb-3">
+
+
+  
+                <img src="img/uidesign/23.jpg" class="img-fluid">
+      
+                <br><br>
+                  <h5 style="color:black; font-weight:800;"> CredBank </h5>
+          
+                <p style="color:black; ">
+                CredBank is a fintech mobile application that provides local and international transactions made easy for individuals in different countries of the world.
+                </p>
+          
+                <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/orVRu4zbnhNUADFuhuPKvj/CREDBANK?node-id=0%3A1&t=GpnuVSuNi1VuvBKL-1"> Link to full project  </a>
+          
+                <br><br>
+
+                <img src="img/uidesign/22.jpg" class="img-fluid">
+      
+                <br><br>
+                  <h5 style="color:black; font-weight:800;"> Yolk Count </h5>
+          
+                <p style="color:black; ">
+               YolkCount is an egg timer mobile application that helps track your eggs cooking time.
+                </p>
+          
+                <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/DiJZzhPsASugTqoROvQTfp/Yolk-Count?t=VC2M790tsZ2efUOo-6"> Link to full project  </a>
+          
+
+                <br> <br>
+      
+              <img src="img/uidesign/1.jpg" class="img-fluid">
+      
+            <br><br>
+              <h5 style="color:black; font-weight:800;"> BetaWaka </h5>
+      
+            <p style="color:black; ">
+            Betawaka is a travel alarm mobile application that alerts users when they get to their nearest destination of travel.
+            </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/pVQQBfIBVkiFtqcKfDoDQ5/BetaWaka?node-id=0%3A1"> Link to full project  </a>
+      
+      
+      
+            <br>
+      
+            <br>
+              <img src="img/uidesign/17.jpg" class="img-fluid">
+      
+      
+              <br><br>
+      
+              <h5 style="color:black; font-weight:800;"> GameSquared (Mobile and Web)</h5>
+      
+            <p style="color:black; ">
+            A cloud based multi-platform game application that gives users access to download their games via any console of their choice.
+      
+      
+            </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120947213/GameSquared"> Link to full project  </a>
+      
+      
+      
+      
             </div>
-            <!-- Copyright -->
-          </footer>
-          <!-- Footer -->
+      
+      
+      
+      
+      
+            <div class="col-md-6 mb-3">
+      
+              <img src="img/uidesign/10.jpg" class="img-fluid">
+      
+            <br><br>
+              <h5 style="color:black; font-weight:800;"> Stery Mobile App </h5>
+      
+            <p style="color:black; ">
+            A mobile application that centralizes on ARTS where users and artists can interact by selling, buying and auctioning artworks to the highest bidder.
+            </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/rE2Vfr0OnPVHUOxKVvypMe/Stery?node-id=0%3A1"> Link to full project  </a>
+      
+      
+            <br><br><br>
+      
+      
+                <img src="img/uidesign/15.jpg" class="img-fluid">
+            <br><br>
+              <h5 style="color:black; font-weight:800;"> Glamour</h5>
+      
+            <p style="color:black; ">
+            Glamour is an online beauty and spa platform that provides clients with top-notch beauty treatment.
+      
+      
+            </p>
+      
+      
+      
+            <br>
+      
+      
+            <img src="img/uidesign/14.png" class="img-fluid">
+      
+            <br><br>
+      
+            <h5 style="color:black; font-weight:800;"> Survival </h5>
+      
+            <p style="color:black; ">
+            This is an abstract UI that represents nature and the explorers of the world.
+      
+      
+            </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120889289/SURVIVAL"> Link to full project  </a>
+      
+      
+            
+            <br><br><br>
+      
+      
+            <img src="img/uidesign/22.png" class="img-fluid">
+      
+            <br><br>
+      
+            <h5 style="color:black; font-weight:800;"> Modella</h5>
+      
+            <p style="color:black; ">
+              Modella is an online web application that allows fashion enthusiasts, models to showcase and promote themselves or brand with just a click of a button.
+      
+      
+            </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120940485/Modella"> Link to full project  </a>
+      
+
+          
+      
+      
+      
+      
+      
+            </div>
+
+    </div>
+
+    </div>
+
+    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+   
+
+        <div class="row">
+
+
+            <div class="col-md-6 mb-3">
+      
+                <img src="img/webdesign/7.jpg" class="img-fluid">
+          
+                <br><br>
+                <h4 style="color:black; font-weight: 800;"> Startup Business Store  </h4>
+                <p style="color:black;">
+                    Startup Business Store is a one-stop shop for every business blueprints that is required to upscale and upgrade budding businesses for more growth, profits, and visibility.
+                </p>
+          
+                <p style="color: darkblue;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
+          
+                <a target="_blank" class="btn btn-primary" href="https://startupbizstore.com/"> Link to full project  </a>
+          
+                </div>
+
+            <div class="col-md-6 mb-3">
+      
+            <img src="img/webdesign/4.jpg" class="img-fluid">
+      
+            <br><br>
+            <h4 style="color:black; font-weight: 800;"> Project Smile  </h4>
+            <p style="color:black;">
+            Project Smile is an initiative by one of Nigeria’s leading dental clinics that seeks to impact the lives of those individuals unlucky to be affected by dental flaws that has had them stigmatized all their lives. These flaws range from over-crowded, protruding and discoloured teeth to far more complex cases. This scheme seeks to award one such deserving individual a chance in a life time to correct this and have the perfect teeth.
+            </p>
+      
+            <p style="color: darkblue;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://www.projectsmileng.org"> Link to full project  </a>
+      
+            </div>
+      
+      
+      
+            <div class="col-md-6 mb-3">
+      
+            <img src="img/webdesign/5.jpg" class="img-fluid">
+      
+            <br><br>
+            <h4 style="color:black; font-weight: 800;"> Orthodontic Dental Care Enterprise </h4>
+            <p style="color:black;">
+            Orthodontic Dental Care Enterprise is a standalone e-commerce web application that allows users to purchase dental care products from different dental care brands and order, pay online.
+            </p>
+      
+            <p style="color: darkblue;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://orthodonticdental.ng"> Link to full project  </a>
+      
+            </div>
+      
+      
+      
+      
+            <div class="col-md-6 mb-3">
+      
+            <div class="card" style="background-image: url('img/webdesign/2.png'); background-size:cover; background-position: center; height: 500px;">
+      
+            </div>
+      
+      
+            <br><br>
+            <h4 style="color:black; font-weight: 800;"> SLEEKMEK CONSTRUCTION  </h4>
+            <p style="color:black;">
+            The SLEEKMEK Group is the parent Multidisciplinary company with interests in Architecture, Engineering, Facility and Project Management, Building and Road Construction. It is renowned for providing of providing bespoke solutions to the built environment. Its consultancy arm (Sleek Projects and Development Consultants) sleekconsultants.com are renowned for providing solutions in Architecture, Engineering, Facility and Project Management.
+            </p>
+      
+            <p style="color: darkblue;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://sleekmek.com"> Link to full project  </a>
+      
+            </div>
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class="col-md-6 mb-3">
+      
+            <div class="card" style="background-image: url('img/webdesign/6.jpg'); background-size:cover; background-position: center; height: 500px;">
+      
+            </div>
+      
+      
+            <br><br>
+            <h4 style="color:black; font-weight: 800;"> AAA Planning and Designs </h4>
+            <p style="color:black;">
+              An Integrated Architectural Designer Firm With Great Work For Constructive Developments, Residential And Public , Health Structural Works.
+            </p>
+      
+            <p style="color: darkblue;"> BUILT WITH : Material Design Bootstrap, HTML, CSS, Javascript, PHP , MySQL. </p>
+      
+            <a target="_blank" class="btn btn-primary" href="https://aaaplanninganddesigns.com"> Link to full project  </a>
+      
+            </div>
+      
+      
+      
+            </div>
+      
+
+            
+    </div>
+
+ 
+    <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+     
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/Falz.jpg" class="img-fluid">
+
+            </div>
+
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/TEMS.jpg" class="img-fluid">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/DON JAZZY.jpg" class="img-fluid">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/REMA.jpg" class="img-fluid">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/CRAYON.jpg" class="img-fluid">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/AYRA STARR.jpg" class="img-fluid">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/MAGIXX.jpg" class="img-fluid">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/BOYSPYCE.jpg" class="img-fluid">
+
+            </div>
+
+
+            <div class="col-md-4 mb-3">
+
+                <img src="img/illustration/2.jpg" class="img-fluid">
+
+                </div>
+
+
+                <div class="col-md-4 mb-3">
+
+        <img src="img/illustration/3.jpg" class="img-fluid">
+
+                </div>
+
+
+                <div class="col-md-4 mb-3">
+            <img src="img/illustration/4.jpg" class="img-fluid">
+
+                </div>
+
+
+
+                <div class="col-md-4 mb-3">
+
+                    <img src="img/illustration/5.jpg" class="img-fluid">
+
+                </div>
+
+
+
+                <div class="col-md-4 mb-3">
+          <img src="img/illustration/6.jpg" class="img-fluid">
+
+                </div>
+
+
+
+                        <div class="col-md-4 mb-3">
+                  <img src="img/illustration/7.jpg" class="img-fluid">
+
+                        </div>
 
 
 
 
+                                <div class="col-md-4 mb-3">
+                          <img src="img/illustration/8.jpg" class="img-fluid">
+
+                                </div>
 
 
 
 
+                                        <div class="col-md-4 mb-3">
+                                  <img src="img/illustration/9.jpg" class="img-fluid">
+
+                                        </div>
 
 
 
 
+                                                <div class="col-md-4 mb-3">
+                                          <img src="img/illustration/1.jpg" class="img-fluid">
+
+                                                </div>
+
+        </div>
+    </div>
+
+ 
+    <div class="tab-pane fade" id="ex1-tabs-5" role="tabpanel" aria-labelledby="ex1-tab-5">
+      
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/1.jpg" class="img-fluid">
+
+            </div>
+
+
+                <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/2.jpg" class="img-fluid">
+
+            </div>
+
+
+
+                <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/3.jpg" class="img-fluid">
+
+            </div>
+
+
+
+                <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/4.jpg" class="img-fluid">
+
+            </div>
+
+                <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/5.jpg" class="img-fluid">
+
+            </div>
+
+
+                <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/6.jpg" class="img-fluid">
+
+            </div>
+
+
+          <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/7.jpg" class="img-fluid">
+
+            </div>
+
+
+          <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/8.jpg" class="img-fluid">
+
+            </div>
+
+
+
+          <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/9.jpg" class="img-fluid">
+
+            </div>
+
+          <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/10.jpg" class="img-fluid">
+
+            </div>
+
+
+          <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/11.jpg" class="img-fluid">
+
+            </div>
+
+          <!--Grid column-->
+            <div class="col-md-4 mb-3">
+
+      <img src="img/animation/12.jpg" class="img-fluid">
+
+            </div>
+
+          <!--Grid column-->
+
+
+            </div>
+
+
+      </div>
+  
+  
+
+  </div>
+  <!-- Tabs content -->
+
+
+  <br><br>
+
+  
+<div class="container animate__animated animate__slideInUp" id="facts">
+
+    <center>
+        <button class="btn btn-lg" style="border-radius: 25px; background-color:#FACAD3; color:#D40F7D; font-weight: 800; font-size:16px;"> FACTS ABOUT MYSELF </button>
+    </center>
+    <br>
+    <h1 style="font-weight:800; color: black; font-size: 45px; text-align:center; "> I've got my own <strong style="color:red;">Youtube Channel</strong> </h1>
+  
+
+
+    <a href="https://www.youtube.com/channel/UCyzNj0e6YVtZkrMKlpERTww" target="_blank">    <img src="img/pic3.png" class="img-fluid"> </a>
+</div>
+
+</div>
+
+    <!-- Footer -->
+    <footer class="bg text-center text-white" style="background: #D40F7D;">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+          <p style="color: white; text-align:center;"> Connect with me via social media links </p>
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://web.facebook.com/tojumoju" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.twitter.com/itss_toju" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/mojutoju" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/mojutoju" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.github.com/mojutoju" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.behance.net/mojutojusamson" role="button"
+              ><i class="fab fa-behance"></i
+            ></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://wa.me/+44769382796" role="button"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+
+
+                      <!-- Github -->
+                      <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="mailto:benmoju@gmail.com" role="button"
+                        ><i class="fab fa-google"></i
+                      ></a>
+
+                      
+                      <!-- Github -->
+                      <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://youtube.com/@tmcreatives" role="button"
+                        ><i class="fab fa-youtube"></i
+                      ></a>
+
+          </section>
+          <!-- Section: Social media -->
 
 
 
 
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="index.html">Toju Moju Portfolio. </a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
 
 
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
-></script>
 
-
-
-
-
-<script>
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+        <!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js">
 </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+    AOS.init();
+</script>
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-document.getElementById("defaultOpen").click();
-  </script>
-
-
-
-  <script>
-    $(document).ready(function() {
-
-    // Gets the video src from the data-src on each button
-
-    var $videoSrc;
-    $('.video-btn').click(function() {
-        $videoSrc = $(this).data( "src" );
+<script>
+    $(document).ready(function(){
+      $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+      });
+      $('.nav-tabs a').hover(function () {
+        $(this).css('background-color', '#D40F7D');
+      });
+      $('.nav-tabs a.active').hover(function () {
+        $(this).css('background-color', '#D40F7D');
+      });
     });
-    console.log($videoSrc);
+    </script>
 
-
-
-    // when the modal is opened autoplay it
-    $('#myModal').on('shown.bs.modal', function (e) {
-
-    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-    $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
-    })
-
-
-
-    // stop playing the youtube video when I close the modal
-    $('#myModal').on('hide.bs.modal', function (e) {
-        // a poor man's stop video
-        $("#video").attr('src',$videoSrc);
-    })
-
-
-
-
-
-
-    // document ready
-    });
-
-
-
-
-  </script>
-
-
+    
 <script>
     //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -2154,6 +1778,7 @@ function topFunction() {
 }
 </script>
 
-
 </body>
+
+
 </html>
