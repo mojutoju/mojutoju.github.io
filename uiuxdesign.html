@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="keywords" content="graphic design, UI/UX design, web design, motion design, illustration design, 3D design, design, web development, user interface, user experience, illustrations, graphics, animations, 3D modeling">
+    <title>Toritseju Portfolio</title>
+    <link rel="icon" href="img/tmlogo.png" type="image/png" />
+    <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
+                
+                
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+  rel="stylesheet"
+/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+ body{
+      font-family: 'Gotham';
+      letter-spacing: -1.4px;
+      
+  }
+
+
+  .navbar {
+    --mdb-navbar-box-shadow: none
+    --mdb-navbar-padding-top: 0.5625rem;
+    --mdb-navbar-brand-img-margin-right: none;
+    box-shadow: none;
+    padding-top: none;
+    
+}
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #intro {
+            margin-top: -58.59px;
+          }
+        }
+
+     
+
+
+        .navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .navbar-nav > li{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+     /* Carousel styling */
+     #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 100vh;
+          }
+
+          .carousel-item:nth-child(1) {
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+          .carousel-item:nth-child(2) {
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+          .carousel-item:nth-child(3) {
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+
+          /* Height for devices larger than 576px */
+          @media (min-width: 992px) {
+            #introCarousel {
+              margin-top: -58.59px;
+            }
+            #introCarousel,
+            .carousel-inner,
+            .carousel-item,
+            .carousel-item.active {
+              height: 50vh;
+            }
+          }
+
+          .navbar .nav-link {
+            color: #000 ;
+          }
+
+
+
+
+
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border-bottom: 2px solid orange;
+    background-color: #101024;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 50px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: orange;
+
+    color: black;
+  }
+
+  .tab button{
+    color: white;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: orange;
+    color: black;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+  .modal-dialog {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+
+    .navbar-nav > li{
+padding-left:10px;
+padding-right:10px;
+}
+
+.navbar-nav > li{
+margin-left:20px;
+margin-right:20px;
+}
+
+ /* Carousel styling */
+ #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      .carousel-item:nth-child(2) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      .carousel-item:nth-child(3) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 50vh;
+        }
+      }
+
+     
+
+
+      #myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: #DE0460; /* Set a background color */
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #4A8C82; /* Add a dark-grey background on hover */
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+    .navbar-nav > li{
+padding-left:10px;
+padding-right:10px;
+}
+
+.navbar-nav > li{
+margin-left:20px;
+margin-right:20px;
+}
+
+  .modal-body {
+    position:relative;
+    padding:0px;
+  }
+  .close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#fff;
+    opacity:1;
+  }
+
+
+  .nav-tabs .nav-link:hover,
+      .nav-tabs .nav-link.active {
+        background-color: #D40F7D;
+        color: white;
+        border-radius: 30px;
+        border: none;
+      }
+    
+
+
+      .nav-tabs .nav-link {
+font-size: 15px;
+margin-left:50px;
+margin-right:50px;
+text-align:center;
+      }
+
+  </style>
+
+</head>
+
+<body>
+
+
+    <div class="bg" style="background: url('img/bg6.png');   background-position: center;  background-repeat: no-repeat; background-size: cover; height: 100%;">
+    
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> <img src="img/tmlogowhite.png" class="img-fluid" width="140px"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color:#D40F7D; "
+          >
+            <i class="fas fa-bars" style="color:white;"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto ">
+            
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="index.html#aboutme" style="color:white;">About Me</a>
+              </li>
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="index.html#choose" style="color:white;">Why Choose Me? </a>
+              </li>
+              
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="index.html#works" style="color:white;">Works </a>
+              </li>
+
+              <li class="nav-item" style="color:black;">
+                <a class="nav-link" href="index.html#contact" style="color:white;">Contact </a>
+              </li>
+
+            </ul>
+
+            <form class="d-flex input-group w-auto">
+
+                <ul class="navbar-nav w-300 ">
+    
+    
+                  <li class="nav-item " style="color:white;">
+                    <a target="_blank" class="nav-link btn btn btn-lg" href="https://drive.google.com/file/d/1Df4H6TfAu7_rwjFPRfiwX2ndyoXaTitO/view?usp=sharing" rel="nofollow" style="font-weight:bold; padding: 13px; font-size: 15px; background-color:#FE4367; color:white; font-weight:bold; border-radius:20px;">
+                    Download CV
+                    </a>
+                  </li>
+    
+                </ul>
+    
+    </form>
+
+          </div>
+        </div>
+      </nav>
+      
+
+
+
+    
+      <br><br><br>
+
+      <div class="container">
+
+
+<div class="row">
+
+
+<div class="col-md-6 mb-3" data-aos="fade-left">
+
+ 
+    <h1  style="color:white; font-size: 60px; letter-spacing: -6px; font-weight:normal; line-height: 90%;">Designing Experiences: A Showcase of my <strong style="color:#F8C74A; font-weight: 800;"> UI/UX Masterpieces </strong>  </h1>
+
+    <br>
+
+   
+
+    <h5 style="color:white; letter-spacing: -1.7px; font-weight:normal; margin-bottom:auto; "> 
+      Browse through my UI/UX designs where imagination meets product designs check the collection of my <strong> Creative Marvels </strong> 
+    </h5>
+<br>
+    <h6 style="color:white; letter-spacing: -1.7px; font-weight:normal; margin-bottom:auto; text-decoration: underline; "> 
+        My Design Tools  </strong> 
+    </h6>
+<br>
+
+
+    <p style=" color:white;  text-transform: none;  letter-spacing: -1px;"> Adobe Photoshop | Adobe Illustrator | Adobe Premiere Pro | Adobe InDesign | Adobe After Effects | Affinity Designer | Microsoft PowerPoint | Figma | Adobe XD   </p>
+
+</div>
+
+<div class="col"></div>
+
+
+<div class="col-md-5 mb-3" data-aos="fade-right">
+
+    <img src="img/mockup2.png" class="img-fluid">
+
+
+</div>
+
+
+
+
+</div>
+    
+
+
+
+           </div> 
+
+
+           </div>
+
+
+<div style="margin-bottom: 80px;" id="contact"></div>
+
+
+<div class="container">
+
+  
+  <div class="row">
+
+    <h3 style="color:black; font-weight:800; letter-spacing: -3px;"> UI/UX Design Projects </h3>
+<hr>
+    <div class="col-md-6 mb-3">
+
+
+
+      <img src="img/uidesign/kracada.jpg" class="img-fluid" style="border-radius: 20px;">
+
+      <br><br>
+        <h5 style="color:black; font-weight:800;"> Kracada </h5>
+
+      <p style="color:black; ">
+        An All-In-One platform that connects people with entertainment, news, lifestyle, fashion, jobs and lots more.
+      </p>
+
+      <a target="_blank" class="btn btn-primary" href="https://www.figma.com/community/file/1253148547161855768"> Link to full project  </a>
+
+      <br><br>
+      </div>
+           
+     
+      <div class="col-md-6 mb-3">
+
+
+
+        <img src="img/uidesign/kris.jpg" class="img-fluid" style="border-radius: 20px;">
+  
+        <br><br>
+          <h5 style="color:black; font-weight:800;"> KRIS (HR Management Solution) </h5>
+  
+        <p style="color:black; ">
+          KRIS is a complete enterprise human resources management system solutions that houses all HR services from recruiting, shortlisting, job boards and lots more.
+        </p>
+  
+        <a target="_blank" class="btn btn-primary" href="https://www.figma.com/community/file/1253149693507675930"> Link to full project  </a>
+  
+        <br><br>
+        </div>
+
+
+    <div class="col-md-6 mb-3">
+
+
+
+      <img src="img/uidesign/demonslayer.jpg" class="img-fluid" style="border-radius: 20px;">
+
+      <br><br>
+        <h5 style="color:black; font-weight:800;"> Anime Web UI: Demon Slayer </h5>
+
+      <p style="color:black; ">
+      An anime web ui for the popular anime series DEMON SLAYER, the website allows users to watch and also view detailed information about all characters in the series.
+      </p>
+
+      <a target="_blank" class="btn btn-primary" href="https://www.figma.com/community/file/1260047539346273329"> Link to full project  </a>
+
+      <br><br>
+      </div>
+           
+      <div class="col-md-6 mb-3">
+
+
+
+        <img src="img/uidesign/swiftsend.jpg" class="img-fluid" style="border-radius: 20px;">
+  
+        <br><br>
+          <h5 style="color:black; font-weight:800;"> SwiftSend</h5>
+  
+        <p style="color:black; ">
+       SwiftSend is a global package delivery company with local currency convenience, they offer clients a focus on transactional convenience, that allows you to pay for your shipments in your own country's currency, eliminating the complexities of currency conversion.
+        </p>
+  
+        <a target="_blank" class="btn btn-primary" href="https://www.figma.com/community/file/1247369405667214349"> Link to full project  </a>
+  
+        <br><br>
+        </div>
+             
+  
+          
+    <div class="col-md-6 mb-3">
+
+
+
+        <img src="img/uidesign/23.jpg" class="img-fluid" style="border-radius: 20px;">
+
+        <br><br>
+          <h5 style="color:black; font-weight:800;"> CredBank </h5>
+  
+        <p style="color:black; ">
+        CredBank is a fintech mobile application that provides local and international transactions made easy for individuals in different countries of the world.
+        </p>
+  
+        <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/orVRu4zbnhNUADFuhuPKvj/CREDBANK?node-id=0%3A1&t=GpnuVSuNi1VuvBKL-1"> Link to full project  </a>
+  
+        <br><br>
+
+        <img src="img/uidesign/22.jpg" class="img-fluid" style="border-radius: 20px;">
+
+        <br><br>
+          <h5 style="color:black; font-weight:800;"> Yolk Count </h5>
+  
+        <p style="color:black; ">
+       YolkCount is an egg timer mobile application that helps track your eggs cooking time.
+        </p>
+  
+        <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/DiJZzhPsASugTqoROvQTfp/Yolk-Count?t=VC2M790tsZ2efUOo-6"> Link to full project  </a>
+  
+
+        <br> <br>
+
+      <img src="img/uidesign/1.jpg" class="img-fluid" style="border-radius: 20px;">
+
+    <br><br>
+      <h5 style="color:black; font-weight:800;"> BetaWaka </h5>
+
+    <p style="color:black; ">
+    Betawaka is a travel alarm mobile application that alerts users when they get to their nearest destination of travel.
+    </p>
+
+    <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/pVQQBfIBVkiFtqcKfDoDQ5/BetaWaka?node-id=0%3A1"> Link to full project  </a>
+
+
+
+    <br>
+
+    <br>
+      <img src="img/uidesign/17.jpg" class="img-fluid" style="border-radius: 20px;">
+
+
+      <br><br>
+
+      <h5 style="color:black; font-weight:800;"> GameSquared (Mobile and Web)</h5>
+
+    <p style="color:black; ">
+    A cloud based multi-platform game application that gives users access to download their games via any console of their choice.
+
+
+    </p>
+
+    <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120947213/GameSquared"> Link to full project  </a>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="col-md-6 mb-3">
+
+      <img src="img/uidesign/10.jpg" class="img-fluid" style="border-radius: 20px;">
+
+    <br><br>
+      <h5 style="color:black; font-weight:800;"> Stery Mobile App </h5>
+
+    <p style="color:black; ">
+    A mobile application that centralizes on ARTS where users and artists can interact by selling, buying and auctioning artworks to the highest bidder.
+    </p>
+
+    <a target="_blank" class="btn btn-primary" href="https://www.figma.com/file/rE2Vfr0OnPVHUOxKVvypMe/Stery?node-id=0%3A1"> Link to full project  </a>
+
+
+    <br><br><br>
+
+
+        <img src="img/uidesign/15.jpg" class="img-fluid" style="border-radius: 20px;">
+    <br><br>
+      <h5 style="color:black; font-weight:800;"> Glamour</h5>
+
+    <p style="color:black; ">
+    Glamour is an online beauty and spa platform that provides clients with top-notch beauty treatment.
+
+
+    </p>
+
+
+
+    <br>
+
+
+    <img src="img/uidesign/14.png" class="img-fluid" style="border-radius: 20px;">
+
+    <br><br>
+
+    <h5 style="color:black; font-weight:800;"> Survival </h5>
+
+    <p style="color:black; ">
+    This is an abstract UI that represents nature and the explorers of the world.
+
+
+    </p>
+
+    <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120889289/SURVIVAL"> Link to full project  </a>
+
+
+    
+    <br><br><br>
+
+
+    <img src="img/uidesign/22.png" class="img-fluid" style="border-radius: 20px;">
+
+    <br><br>
+
+    <h5 style="color:black; font-weight:800;"> Modella</h5>
+
+    <p style="color:black; ">
+      Modella is an online web application that allows fashion enthusiasts, models to showcase and promote themselves or brand with just a click of a button.
+
+
+    </p>
+
+    <a target="_blank" class="btn btn-primary" href="https://www.behance.net/gallery/120940485/Modella"> Link to full project  </a>
+
+
+  
+
+
+
+
+
+    </div>
+
+</div>
+</div>
+
+
+
+<div style="margin-bottom: 80px;"></div>
+
+
+<div class="bgg" style="background-color: aliceblue; padding:35px;">
+<div class="container aos-init aos-animate" data-aos="fade-up" >
+
+
+  <div class="row">
+
+    <div class="col-md-6 mb-3">
+
+      <p style="border-radius: 25px;  color:#D40F7D; font-weight: 800; font-size:16px; letter-spacing: -2px;"> FIGMA COMMUNITY CONTRIBUTION </button>
+  
+      <h4 style="font-weight:800; color: black; font-size: 40px; letter-spacing: -3px; "> I've got my own <strong style="color:red;">Figma Community Profile</strong> </h4>
+
+      <p> With my skills in UI/UX design, I publish my ui/ux design projects to the figma community in order to impact the design community and inspire others 
+
+     My Figma Community has impacted a total of <strong> 669 Designers with Duplicates of my work, </strong> so I'm confident in my skills and willing to do more and learn as much as I can.
+      </p>
+
+      
+<a href="https://figma.com/@mojutoju"  target="_blank" class="btn btn btn-sm" style="background-color:#D40F7D; color:white; width:170px; border-radius:30px; text-transform: none; padding:15px; font-size:17px;"> View Community</a>
+
+    </div>
+
+
+    <div class="col-md-6 mb-3">
+
+      <a href="https://figma.com/@mojutoju" target="_blank">    <img src="img/figmacommunity.png" class="img-fluid"> </a>
+
+    </div>
+
+  </div>
+
+
+  
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg text-center text-white" style="background: #D40F7D;">
+    <!-- Grid container -->
+    <div class="container p-4">
+
+      
+<div class="container aos-init aos-animate" data-aos="fade-up">
+<img src="img/contactbanner.png" class="img-fluid">
+</div>
+
+<div style="margin-bottom: 30px;"></div>
+      <p style="color: white; text-align:center;"> Connect with me via social media links </p>
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://web.facebook.com/tojumoju" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.twitter.com/itss_toju" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/mojutoju" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/mojutoju" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.github.com/mojutoju" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.behance.net/mojutojusamson" role="button"
+          ><i class="fab fa-behance"></i
+        ></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://wa.me/+44769382796" role="button"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+
+
+                  <!-- Github -->
+                  <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="mailto:benmoju@gmail.com" role="button"
+                    ><i class="fab fa-google"></i
+                  ></a>
+
+                  
+                  <!-- Github -->
+                  <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://youtube.com/@tmcreatives" role="button"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+
+      </section>
+      <!-- Section: Social media -->
+
+
+
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="index.html">Toritseju Portfolio. | Website Designed By Toritseju </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+     <!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js">
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+  $(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+    $('.nav-tabs a').hover(function () {
+      $(this).css('background-color', '#D40F7D');
+    });
+    $('.nav-tabs a.active').hover(function () {
+      $(this).css('background-color', '#D40F7D');
+    });
+  });
+  </script>
+
+  
+<script>
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+
+
+</html>
