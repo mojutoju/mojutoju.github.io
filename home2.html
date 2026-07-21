@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Samson Moju — Senior Graphic Designer</title>
+<meta name="description" content="Samson Toritseju Moju — Senior Graphic Designer specialising in brand identity, packaging, editorial and campaign design.">
+<meta name="keywords" content="graphic design, brand identity, packaging design, editorial design, UI/UX design, web design, illustration">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F1E7;
+    --paper-dim:#EDE7D8;
+    --ink:#15151B;
+    --ink-soft:#4A4A52;
+    --signal:#1E3FE0;
+    --mustard:#E3A537;
+    --brick:#C23B22;
+    --line: rgba(21,21,27,0.14);
+    --radius: 2px;
+    --maxw: 1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--signal); color:var(--paper);}
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+  @media(max-width:640px){ .wrap{padding:0 20px;} }
+
+  .display{
+    font-family:'Anton',sans-serif;
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    line-height:0.92;
+  }
+  .mono{
+    font-family:'JetBrains Mono',monospace;
+    letter-spacing:0.03em;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--signal);
+    font-weight:600;
+  }
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(245,241,231,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:16px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  @media(max-width:640px){ .nav-inner{padding:14px 20px;} }
+  .nav-mark{
+    font-family:'Anton',sans-serif; font-size:20px; letter-spacing:0.5px;
+    display:flex; align-items:center; gap:8px; text-decoration:none;
+  }
+  .nav-mark .dot{width:9px; height:9px; background:var(--signal); border-radius:50%; display:inline-block;}
+  .nav-links{display:flex; gap:28px; list-style:none; margin:0; padding:0;}
+  .nav-links a{
+    text-decoration:none; font-size:13px; font-weight:600; letter-spacing:0.04em;
+    text-transform:uppercase; color:var(--ink-soft); transition:color .2s;
+  }
+  .nav-links a:hover{color:var(--signal);}
+  .nav-cta{
+    font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em;
+    background:var(--ink); color:var(--paper); padding:9px 16px; text-decoration:none;
+    border-radius:var(--radius); white-space:nowrap;
+  }
+  .burger{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .burger span{display:block; width:22px; height:2px; background:var(--ink); margin:5px 0;}
+  @media(max-width:860px){
+    .nav-links{
+      position:fixed; top:60px; left:0; right:0; background:var(--paper);
+      flex-direction:column; gap:0; border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden; transition:max-height .3s ease;
+    }
+    .nav-links.open{max-height:320px;}
+    .nav-links a{padding:16px 20px; border-top:1px solid var(--line); display:block;}
+    .burger{display:block;}
+    .nav-cta{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--ink); color:var(--paper);
+    padding:150px 0 90px; position:relative; overflow:hidden;
+  }
+  .hero .wrap{position:relative; z-index:2;}
+  .hero-eyebrow{color:var(--mustard);}
+  .hero h1{
+    font-size:clamp(52px, 10vw, 128px);
+    margin:14px 0 0;
+    color:var(--paper);
+  }
+  .hero h1 span{color:transparent; -webkit-text-stroke:1.5px var(--paper);}
+  .hero-role{
+    font-size:clamp(20px,3vw,30px);
+    margin:10px 0 26px;
+    color:var(--paper);
+    font-weight:800;
+  }
+  .hero-role em{font-style:normal; color:var(--mustard);}
+  .hero-sub{
+    max-width:560px; font-size:16px; line-height:1.6; color:#C9C7D6;
+    margin-bottom:38px;
+  }
+  .hero-actions{display:flex; gap:16px; flex-wrap:wrap; align-items:center;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 24px; text-decoration:none; font-weight:700; font-size:13px;
+    text-transform:uppercase; letter-spacing:0.06em; border-radius:var(--radius);
+    transition:transform .18s ease, background .18s ease;
+  }
+  .btn-primary{background:var(--signal); color:var(--paper);}
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-ghost{border:1px solid rgba(245,241,231,0.4); color:var(--paper);}
+  .btn-ghost:hover{border-color:var(--paper); transform:translateY(-2px);}
+
+  /* swing tag signature element */
+  .swing-tag{
+    position:absolute;
+    background:var(--paper);
+    color:var(--ink);
+    padding:16px 20px 14px;
+    width:170px;
+    border-radius:3px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.35);
+    transform:rotate(7deg);
+  }
+  .swing-tag::before{
+    content:"";
+    position:absolute; top:-13px; left:22px;
+    width:14px; height:14px; border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--ink);
+  }
+  .swing-tag .tag-no{font-size:10px; color:var(--signal); font-weight:700;}
+  .swing-tag .tag-label{font-family:'Anton',sans-serif; font-size:18px; line-height:1.05; margin-top:4px; text-transform:uppercase;}
+  .hero .swing-tag{ right:6%; top:120px; }
+  @media(max-width:860px){ .hero .swing-tag{display:none;} }
+
+  /* ---------- SECTION HEADERS as tags ---------- */
+  .section{padding:88px 0;}
+  .section.tight{padding:64px 0;}
+  .section-alt{background:var(--paper-dim);}
+  .tag-heading{
+    display:inline-flex; align-items:flex-start; gap:14px; margin-bottom:14px;
+  }
+  .tag-heading .chip{
+    font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+    background:var(--ink); color:var(--paper); padding:5px 9px; border-radius:2px;
+    transform:rotate(-3deg); margin-top:6px; white-space:nowrap;
+  }
+  .tag-heading h2{
+    font-size:clamp(30px,5vw,50px); margin:0;
+  }
+  .section-intro{
+    max-width:620px; color:var(--ink-soft); font-size:15.5px; line-height:1.65; margin:0 0 44px;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:start;
+  }
+  @media(max-width:860px){ .about-grid{grid-template-columns:1fr; gap:36px;} }
+  .about-copy p{font-size:16px; line-height:1.75; color:#242430;}
+  .stat-row{display:flex; gap:32px; margin-top:32px; flex-wrap:wrap;}
+  .stat b{display:block; font-family:'Anton',sans-serif; font-size:34px; color:var(--signal);}
+  .stat span{font-size:12px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-soft);}
+  .about-side{
+    background:var(--ink); color:var(--paper); padding:28px; border-radius:4px;
+  }
+  .about-side h3{margin:0 0 14px; font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mustard);}
+  .about-side ul{margin:0; padding:0; list-style:none;}
+  .about-side li{
+    padding:10px 0; border-top:1px solid rgba(245,241,231,0.15); font-size:14px; display:flex; justify-content:space-between; gap:10px;
+  }
+  .about-side li:first-child{border-top:none;}
+
+  /* ---------- CAPABILITIES ---------- */
+  .cap-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+  @media(max-width:760px){ .cap-grid{grid-template-columns:1fr 1fr;} }
+  @media(max-width:480px){ .cap-grid{grid-template-columns:1fr;} }
+  .cap-cell{background:var(--paper); padding:26px 22px;}
+  .cap-cell .num{font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--signal); font-weight:700;}
+  .cap-cell h4{margin:10px 0 8px; font-size:17px;}
+  .cap-cell p{margin:0; font-size:13.5px; color:var(--ink-soft); line-height:1.55;}
+
+  /* ---------- WORK / GALLERY ---------- */
+  .gallery{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px;
+  }
+  .gallery.cols-3{grid-template-columns:repeat(3,1fr);}
+  @media(max-width:900px){ .gallery, .gallery.cols-3{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:520px){ .gallery, .gallery.cols-3{grid-template-columns:1fr 1fr; gap:8px;} }
+  .g-item{
+    position:relative; overflow:hidden; border-radius:2px; background:#E4DFCF;
+    cursor:pointer; aspect-ratio:1/1;
+  }
+  .g-item img{
+    width:100%; height:100%; object-fit:cover; transition:transform .5s ease;
+  }
+  .g-item:hover img{transform:scale(1.08);}
+  .g-item::after{
+    content:"↗"; position:absolute; top:10px; right:10px; width:26px; height:26px;
+    background:var(--paper); color:var(--ink); border-radius:50%; display:flex;
+    align-items:center; justify-content:center; font-size:14px; opacity:0; transition:opacity .2s;
+  }
+  .g-item:hover::after{opacity:1;}
+
+  /* case study cards */
+  .case-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:26px;}
+  @media(max-width:760px){ .case-grid{grid-template-columns:1fr;} }
+  .case-card{
+    background:var(--paper); border:1px solid var(--line); border-radius:4px; overflow:hidden;
+    display:flex; flex-direction:column; transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .case-card:hover{transform:translateY(-4px); box-shadow:0 16px 30px rgba(21,21,27,0.08);}
+  .case-thumb{aspect-ratio:16/10; overflow:hidden; background:#E4DFCF; cursor:pointer;}
+  .case-thumb img{width:100%; height:100%; object-fit:cover;}
+  .case-body{padding:20px 22px 24px;}
+  .case-body h4{margin:0 0 8px; font-size:19px;}
+  .case-body p{margin:0 0 14px; font-size:13.8px; line-height:1.6; color:var(--ink-soft);}
+  .case-link{
+    font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;
+    color:var(--signal); text-decoration:none; display:inline-flex; gap:6px; align-items:center;
+  }
+  .case-link::after{content:"→"; transition:transform .2s;}
+  .case-link:hover::after{transform:translateX(3px);}
+  .case-nolink{font-size:12px; color:var(--ink-soft); font-style:italic;}
+
+  /* PDF callout strip */
+  .pdf-strip{
+    display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;
+    background:var(--ink); color:var(--paper); padding:34px 36px; border-radius:6px; margin-top:56px;
+  }
+  .pdf-strip h4{margin:0 0 6px; font-size:21px;}
+  .pdf-strip p{margin:0; color:#C9C7D6; font-size:14px; max-width:480px;}
+  .pdf-links{display:flex; gap:12px; flex-wrap:wrap;}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  .contact{
+    background:var(--ink); color:var(--paper); padding:100px 0 50px; position:relative;
+  }
+  .contact h2{font-size:clamp(38px,7vw,72px); margin:0 0 18px; color:var(--paper);}
+  .contact-sub{color:#C9C7D6; max-width:480px; font-size:15.5px; line-height:1.6; margin-bottom:40px;}
+  .contact-grid{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; margin-bottom:56px;
+  }
+  .contact-tag{
+    background:rgba(245,241,231,0.06); border:1px solid rgba(245,241,231,0.16);
+    padding:18px 18px; border-radius:4px; text-decoration:none; transition:background .2s,border-color .2s;
+  }
+  .contact-tag:hover{background:rgba(245,241,231,0.12); border-color:var(--mustard);}
+  .contact-tag .k{font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mustard); font-weight:700;}
+  .contact-tag .v{font-size:14.5px; margin-top:6px; word-break:break-word;}
+  .footer-bottom{
+    border-top:1px solid rgba(245,241,231,0.15); padding-top:24px;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:12.5px; color:#8F8DA0;
+  }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; background:rgba(15,15,20,0.94); z-index:200;
+    display:none; align-items:center; justify-content:center; padding:40px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:min(900px,92vw); max-height:86vh; object-fit:contain; border-radius:4px;}
+  .lightbox-close{
+    position:absolute; top:24px; right:28px; background:none; border:none; color:var(--paper);
+    font-size:32px; cursor:pointer; line-height:1;
+  }
+
+  /* reveal on scroll */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; scroll-behavior:auto !important;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark"><span class="dot"></span>MOJU<span style="color:var(--signal)">.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="mailto:toritsejumoju@gmail.com">Hire Me</a>
+    <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow hero-eyebrow">Lagos, Nigeria — Available Remote</div>
+    <h1 class="display">SAMSON<br><span>TORITSEJU</span> MOJU</h1>
+    <div class="hero-role">Senior Graphic Designer — <em>Brand, Editorial &amp; Campaign</em></div>
+    <p class="hero-sub">I build brand systems, packaging, editorial and campaign work that hold together across every touchpoint — from a hang-tag to a homepage. 5+ years designing for consumer, luxury and fintech-adjacent brands across the UK and Nigeria.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#work">View Selected Work</a>
+      <a class="btn btn-ghost" href="mailto:toritsejumoju@gmail.com">Start a Conversation</a>
+    </div>
+  </div>
+  <div class="swing-tag">
+    <div class="tag-no">№ 001</div>
+    <div class="tag-label">Designed with intention</div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="tag-heading reveal">
+      <span class="chip">TAG 01</span>
+      <h2 class="display">About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I'm a multidisciplinary graphic designer with 5+ years of experience across brand identity, packaging, editorial and digital design — with direct experience designing for a FinTech platform. I've led design end-to-end for clients across the UK and Nigeria: building visual identity systems, shaping packaging and label suites, producing campaign and social creative, and keeping every asset accountable to the brand it belongs to.</p>
+        <p>My background in Data Analytics for Business Intelligence gives me a genuine, practical read on how to turn complex or data-heavy content into clear visual stories — useful for dashboards and reports, but the same instinct for clarity runs through every packaging label and campaign layout I design.</p>
+        <div class="stat-row">
+          <div class="stat"><b>5+</b><span>Years in Design</span></div>
+          <div class="stat"><b>14</b><span>Roles &amp; Collaborations</span></div>
+          <div class="stat"><b>35%</b><span>Faster Turnaround Delivered</span></div>
+        </div>
+      </div>
+      <div class="about-side reveal">
+        <h3>At a Glance</h3>
+        <ul>
+          <li><span>Based in</span><span>Lagos, Nigeria</span></li>
+          <li><span>Working across</span><span>UK &amp; Nigeria clients</span></li>
+          <li><span>Core focus</span><span>Brand · Editorial · Campaign</span></li>
+          <li><span>Also skilled in</span><span>UI/UX · Data Viz</span></li>
+          <li><span>Education</span><span>MSc Data Analytics, Leicester</span></li>
+          <li><span>Available</span><span>Fully remote</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="capabilities">
+  <div class="wrap">
+    <div class="tag-heading reveal">
+      <span class="chip">TAG 02</span>
+      <h2 class="display">Capabilities</h2>
+    </div>
+    <p class="section-intro reveal">The range I bring to a design pod — from brand systems that hold under pressure to campaign work built to convert.</p>
+    <div class="cap-grid reveal">
+      <div class="cap-cell">
+        <div class="num">01</div>
+        <h4>Brand Identity &amp; Systems</h4>
+        <p>Logo suites, guidelines, colour and type systems, packaging and label language built to scale across print, digital and spatial applications.</p>
+      </div>
+      <div class="cap-cell">
+        <div class="num">02</div>
+        <h4>Editorial &amp; Print</h4>
+        <p>Brochures, reports, presentation decks and case-study layouts that turn dense content into something worth reading.</p>
+      </div>
+      <div class="cap-cell">
+        <div class="num">03</div>
+        <h4>Promotional &amp; Campaign</h4>
+        <p>Social, launch and conversion-driven creative — built to move fast without losing the brand's shape.</p>
+      </div>
+      <div class="cap-cell">
+        <div class="num">04</div>
+        <h4>Packaging &amp; Product</h4>
+        <p>Structural and surface packaging design, hang-tags and labelling systems for apparel, food and lifestyle brands.</p>
+      </div>
+      <div class="cap-cell">
+        <div class="num">05</div>
+        <h4>UI/UX &amp; Product Design</h4>
+        <p>Mobile and web interfaces, dashboards and merchant/user flows — including direct FinTech design experience.</p>
+      </div>
+      <div class="cap-cell">
+        <div class="num">06</div>
+        <h4>Illustration &amp; Motion</h4>
+        <p>Character illustration, poster art and motion graphics that give a brand a distinct, memorable voice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="tag-heading reveal">
+      <span class="chip">TAG 03</span>
+      <h2 class="display">Selected Work</h2>
+    </div>
+    <p class="section-intro reveal">A working set of brand, editorial, campaign, packaging, product and illustration projects — click any piece to view it larger.</p>
+
+    <!-- Brand Identity -->
+    <h3 class="reveal" style="margin:46px 0 4px; font-size:20px;">Brand Identity &amp; Logo Design</h3>
+    <p class="reveal" style="color:var(--ink-soft); font-size:14px; margin:0 0 20px;">Identity systems built to hold shape across every touchpoint a brand touches.</p>
+    <div class="gallery reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/logo/bigbites.png" alt="BigBites logo design"></div>
+      <div class="g-item"><img loading="lazy" src="img/logo/geebeautymagic.png" alt="Gee Beauty Magic logo design"></div>
+      <div class="g-item"><img loading="lazy" src="img/logo/firstwatchcafe.png" alt="First Watch Cafe logo design"></div>
+      <div class="g-item"><img loading="lazy" src="img/logo/chopbig.png" alt="ChopBig logo design"></div>
+      <div class="g-item"><img loading="lazy" src="img/logo/safeears.png" alt="SafeEars logo design"></div>
+      <div class="g-item"><img loading="lazy" src="img/logo/teeschow.png" alt="TeesChow logo design"></div>
+      <div class="g-item"><img loading="lazy" src="img/logo/synergy.png" alt="Synergy Foods logo design"></div>
+      <div class="g-item"><img loading="lazy" src="img/logo/sportstv.png" alt="Sports TV logo design"></div>
+    </div>
+
+    <h3 class="reveal" style="margin:46px 0 20px; font-size:20px;">Brand Systems</h3>
+    <div class="gallery cols-3 reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/branding/1.jpg" alt="Brand identity system 1"></div>
+      <div class="g-item"><img loading="lazy" src="img/branding/2.jpg" alt="Brand identity system 2"></div>
+      <div class="g-item"><img loading="lazy" src="img/branding/3.jpg" alt="Brand identity system 3"></div>
+      <div class="g-item"><img loading="lazy" src="img/branding/4.jpg" alt="Brand identity system 4"></div>
+      <div class="g-item"><img loading="lazy" src="img/branding/5.jpg" alt="Brand identity system 5"></div>
+      <div class="g-item"><img loading="lazy" src="img/branding/6.jpg" alt="Brand identity system 6"></div>
+    </div>
+
+    <!-- Editorial -->
+    <h3 class="reveal" style="margin:46px 0 4px; font-size:20px;">Editorial &amp; Print</h3>
+    <p class="reveal" style="color:var(--ink-soft); font-size:14px; margin:0 0 20px;">Brochures and reports built for reading, not just skimming.</p>
+    <div class="gallery cols-3 reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/brochures/2.jpg" alt="Brochure design 1"></div>
+      <div class="g-item"><img loading="lazy" src="img/brochures/1.jpg" alt="Brochure design 2"></div>
+      <div class="g-item"><img loading="lazy" src="img/brochures/3.jpg" alt="Brochure design 3"></div>
+      <div class="g-item"><img loading="lazy" src="img/brochures/4.jpg" alt="Brochure design 4"></div>
+    </div>
+
+    <!-- Campaign / social -->
+    <h3 class="reveal" style="margin:46px 0 4px; font-size:20px;">Promotional &amp; Campaign</h3>
+    <p class="reveal" style="color:var(--ink-soft); font-size:14px; margin:0 0 20px;">Social, launch and conversion-driven creative.</p>
+    <div class="gallery reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/1.jpg" alt="Campaign design 1"></div>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/4.jpg" alt="Campaign design 2"></div>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/3.jpg" alt="Campaign design 3"></div>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/5.jpg" alt="Campaign design 4"></div>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/6.jpg" alt="Campaign design 5"></div>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/7.jpg" alt="Campaign design 6"></div>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/8.jpg" alt="Campaign design 7"></div>
+      <div class="g-item"><img loading="lazy" src="img/socialmedia/9.jpg" alt="Campaign design 8"></div>
+    </div>
+
+    <!-- Posters -->
+    <h3 class="reveal" style="margin:46px 0 20px; font-size:20px;">Poster Design</h3>
+    <div class="gallery cols-3 reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/poster/1.jpg" alt="Poster design 1"></div>
+      <div class="g-item"><img loading="lazy" src="img/poster/2.jpg" alt="Poster design 2"></div>
+      <div class="g-item"><img loading="lazy" src="img/poster/3.jpg" alt="Poster design 3"></div>
+      <div class="g-item"><img loading="lazy" src="img/poster/4.png" alt="Poster design 4"></div>
+      <div class="g-item"><img loading="lazy" src="img/poster/5.jpg" alt="Poster design 5"></div>
+      <div class="g-item"><img loading="lazy" src="img/poster/9.jpg" alt="Poster design 6"></div>
+    </div>
+
+    <!-- Packaging -->
+    <h3 class="reveal" style="margin:46px 0 4px; font-size:20px;">Packaging &amp; Product</h3>
+    <p class="reveal" style="color:var(--ink-soft); font-size:14px; margin:0 0 20px;">Structural and surface design for consumer, food and lifestyle products.</p>
+    <div class="gallery cols-3 reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/package/1.jpg" alt="Packaging design 1"></div>
+      <div class="g-item"><img loading="lazy" src="img/package/2.jpg" alt="Packaging design 2"></div>
+      <div class="g-item"><img loading="lazy" src="img/package/3.jpg" alt="Packaging design 3"></div>
+      <div class="g-item"><img loading="lazy" src="img/package/4.jpg" alt="Packaging design 4"></div>
+      <div class="g-item"><img loading="lazy" src="img/package/5.jpg" alt="Packaging design 5"></div>
+    </div>
+
+    <div class="pdf-strip reveal">
+      <div>
+        <h4>More apparel, packaging &amp; brand-identity work</h4>
+        <p>Full case studies — including the Luxury4Less and Lajuirene Foods brand systems, apparel labelling and packaging suites — are in my dedicated PDF portfolios.</p>
+      </div>
+      <div class="pdf-links">
+        <a class="btn btn-primary" href="https://mojutoju.github.io/img/pdf/Toritseju_Samson_Moju_-_Apparel_and_Packaging_Design_Portfolio.pdf" target="_blank" rel="noopener">Apparel &amp; Packaging PDF</a>
+        <a class="btn btn-ghost" href="https://mojutoju.github.io/img/pdf/Toritseju_Samson_Moju_Portfolio_Updated.pdf" target="_blank" rel="noopener">Full Portfolio PDF</a>
+      </div>
+    </div>
+
+    <!-- Photo manipulation -->
+    <h3 class="reveal" style="margin:46px 0 20px; font-size:20px;">Photo Manipulation</h3>
+    <div class="gallery cols-3 reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/photomanipulation/4.jpg" alt="Photo manipulation 1"></div>
+      <div class="g-item"><img loading="lazy" src="img/photomanipulation/3.jpg" alt="Photo manipulation 2"></div>
+      <div class="g-item"><img loading="lazy" src="img/photomanipulation/2.jpg" alt="Photo manipulation 3"></div>
+      <div class="g-item"><img loading="lazy" src="img/photomanipulation/1.jpg" alt="Photo manipulation 4"></div>
+      <div class="g-item"><img loading="lazy" src="img/photomanipulation/5.jpg" alt="Photo manipulation 5"></div>
+      <div class="g-item"><img loading="lazy" src="img/photomanipulation/6.jpg" alt="Photo manipulation 6"></div>
+    </div>
+
+    <!-- UI/UX Case studies -->
+    <h3 class="reveal" style="margin:46px 0 4px; font-size:20px;">Product &amp; UI/UX Design</h3>
+    <p class="reveal" style="color:var(--ink-soft); font-size:14px; margin:0 0 20px;">Mobile and web product design, including a FinTech application.</p>
+    <div class="case-grid reveal">
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/23.jpg"><img loading="lazy" src="img/uidesign/23.jpg" alt="CredBank fintech app design"></div>
+        <div class="case-body">
+          <h4>CredBank</h4>
+          <p>A fintech mobile application making local and international transactions easy for people across different countries.</p>
+          <a class="case-link" href="https://www.figma.com/file/orVRu4zbnhNUADFuhuPKvj/CREDBANK?node-id=0%3A1&t=GpnuVSuNi1VuvBKL-1" target="_blank" rel="noopener">View on Figma</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/22.jpg"><img loading="lazy" src="img/uidesign/22.jpg" alt="YolkCount app design"></div>
+        <div class="case-body">
+          <h4>Yolk Count</h4>
+          <p>An egg-timer mobile application that helps track cooking time for eggs, prepared different ways.</p>
+          <a class="case-link" href="https://www.figma.com/file/DiJZzhPsASugTqoROvQTfp/Yolk-Count?t=VC2M790tsZ2efUOo-6" target="_blank" rel="noopener">View on Figma</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/1.jpg"><img loading="lazy" src="img/uidesign/1.jpg" alt="BetaWaka app design"></div>
+        <div class="case-body">
+          <h4>BetaWaka</h4>
+          <p>A travel alarm mobile application that alerts users when they reach their nearest travel destination.</p>
+          <a class="case-link" href="https://www.figma.com/file/pVQQBfIBVkiFtqcKfDoDQ5/BetaWaka?node-id=0%3A1" target="_blank" rel="noopener">View on Figma</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/17.jpg"><img loading="lazy" src="img/uidesign/17.jpg" alt="GameSquared app design"></div>
+        <div class="case-body">
+          <h4>GameSquared</h4>
+          <p>A cloud-based, multi-platform game application giving users access to their games via any console.</p>
+          <a class="case-link" href="https://www.behance.net/gallery/120947213/GameSquared" target="_blank" rel="noopener">View on Behance</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/10.jpg"><img loading="lazy" src="img/uidesign/10.jpg" alt="Stery app design"></div>
+        <div class="case-body">
+          <h4>Stery</h4>
+          <p>An arts-centred mobile application where users and artists interact by selling, buying and auctioning artwork.</p>
+          <a class="case-link" href="https://www.figma.com/file/rE2Vfr0OnPVHUOxKVvypMe/Stery?node-id=0%3A1" target="_blank" rel="noopener">View on Figma</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/15.jpg"><img loading="lazy" src="img/uidesign/15.jpg" alt="Glamour app design"></div>
+        <div class="case-body">
+          <h4>Glamour</h4>
+          <p>An online beauty and spa platform that connects clients with top-tier beauty treatment providers.</p>
+          <span class="case-nolink">Case study on request</span>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/14.png"><img loading="lazy" src="img/uidesign/14.png" alt="Survival app design"></div>
+        <div class="case-body">
+          <h4>Survival</h4>
+          <p>An abstract UI concept representing nature and the explorers who move through the world.</p>
+          <a class="case-link" href="https://www.behance.net/gallery/120889289/SURVIVAL" target="_blank" rel="noopener">View on Behance</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/uidesign/22.png"><img loading="lazy" src="img/uidesign/22.png" alt="Modella app design"></div>
+        <div class="case-body">
+          <h4>Modella</h4>
+          <p>A web application letting fashion enthusiasts and models showcase and promote themselves at the click of a button.</p>
+          <a class="case-link" href="https://www.behance.net/gallery/120940485/Modella" target="_blank" rel="noopener">View on Behance</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web design -->
+    <h3 class="reveal" style="margin:46px 0 4px; font-size:20px;">Web Design &amp; Development</h3>
+    <p class="reveal" style="color:var(--ink-soft); font-size:14px; margin:0 0 20px;">End-to-end sites built and shipped, from design through front-end build.</p>
+    <div class="case-grid reveal">
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/webdesign/7.jpg"><img loading="lazy" src="img/webdesign/7.jpg" alt="Startup Business Store website"></div>
+        <div class="case-body">
+          <h4>Startup Business Store</h4>
+          <p>A one-stop shop for the business blueprints founders need to scale — built with Material Design Bootstrap, HTML, CSS, JS, PHP and MySQL.</p>
+          <a class="case-link" href="https://startupbizstore.com/" target="_blank" rel="noopener">Visit site</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/webdesign/4.jpg"><img loading="lazy" src="img/webdesign/4.jpg" alt="Project Smile website"></div>
+        <div class="case-body">
+          <h4>Project Smile</h4>
+          <p>An initiative by a leading Nigerian dental clinic offering a life-changing dental correction to one deserving individual.</p>
+          <a class="case-link" href="https://www.projectsmileng.org" target="_blank" rel="noopener">Visit site</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" data-lightbox="img/webdesign/5.jpg"><img loading="lazy" src="img/webdesign/5.jpg" alt="Orthodontic Dental Care Enterprise website"></div>
+        <div class="case-body">
+          <h4>Orthodontic Dental Care Enterprise</h4>
+          <p>A standalone e-commerce application for purchasing dental care products online, with full order and payment flow.</p>
+          <a class="case-link" href="https://orthodonticdental.ng" target="_blank" rel="noopener">Visit site</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" style="display:flex; align-items:center; justify-content:center; background:var(--ink); aspect-ratio:16/10;">
+          <span class="display" style="color:var(--paper); font-size:26px; text-align:center; padding:0 20px;">SLEEKMEK</span>
+        </div>
+        <div class="case-body">
+          <h4>Sleekmek Construction</h4>
+          <p>Site for a multidisciplinary group spanning architecture, engineering, facility and project management, and construction.</p>
+          <a class="case-link" href="https://sleekmek.com" target="_blank" rel="noopener">Visit site</a>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-thumb" style="display:flex; align-items:center; justify-content:center; background:var(--ink); aspect-ratio:16/10;">
+          <span class="display" style="color:var(--paper); font-size:24px; text-align:center; padding:0 20px;">AAA PLANNING</span>
+        </div>
+        <div class="case-body">
+          <h4>AAA Planning &amp; Designs</h4>
+          <p>Site for an integrated architectural design firm delivering residential, public and health structural work.</p>
+          <a class="case-link" href="https://aaaplanninganddesigns.com" target="_blank" rel="noopener">Visit site</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Illustration -->
+    <h3 class="reveal" style="margin:46px 0 4px; font-size:20px;">Illustration</h3>
+    <p class="reveal" style="color:var(--ink-soft); font-size:14px; margin:0 0 20px;">Character illustration and portrait work, including promotional artist series.</p>
+    <div class="gallery reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/illustration/Falz.jpg" alt="Falz illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/TEMS.jpg" alt="Tems illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/DON JAZZY.jpg" alt="Don Jazzy illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/REMA.jpg" alt="Rema illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/CRAYON.jpg" alt="Crayon illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/AYRA STARR.jpg" alt="Ayra Starr illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/MAGIXX.jpg" alt="Magixx illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/BOYSPYCE.jpg" alt="Boyspyce illustration"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/2.jpg" alt="Illustration piece"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/3.jpg" alt="Illustration piece"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/4.jpg" alt="Illustration piece"></div>
+      <div class="g-item"><img loading="lazy" src="img/illustration/5.jpg" alt="Illustration piece"></div>
+    </div>
+
+    <!-- Motion -->
+    <h3 class="reveal" style="margin:46px 0 20px; font-size:20px;">Motion &amp; 3D</h3>
+    <div class="gallery cols-3 reveal" data-lightbox-group>
+      <div class="g-item"><img loading="lazy" src="img/animation/1.jpg" alt="Motion design frame 1"></div>
+      <div class="g-item"><img loading="lazy" src="img/animation/2.jpg" alt="Motion design frame 2"></div>
+      <div class="g-item"><img loading="lazy" src="img/animation/3.jpg" alt="Motion design frame 3"></div>
+      <div class="g-item"><img loading="lazy" src="img/animation/4.jpg" alt="Motion design frame 4"></div>
+      <div class="g-item"><img loading="lazy" src="img/animation/5.jpg" alt="Motion design frame 5"></div>
+      <div class="g-item"><img loading="lazy" src="img/animation/6.jpg" alt="Motion design frame 6"></div>
+    </div>
+    <p class="reveal" style="margin-top:22px;"><a class="case-link" href="https://youtube.com/@tmcreatives" target="_blank" rel="noopener">See more motion work on YouTube</a></p>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="tag-heading reveal">
+      <span class="chip" style="background:var(--mustard); color:var(--ink);">TAG 04</span>
+    </div>
+    <h2 class="display reveal">Let's build<br>something brand-true.</h2>
+    <p class="contact-sub reveal">Open to senior design roles and remote collaborations — brand systems, editorial, campaign, packaging or product design.</p>
+    <div class="contact-grid reveal">
+      <a class="contact-tag" href="mailto:toritsejumoju@gmail.com">
+        <div class="k">Email</div><div class="v">toritsejumoju@gmail.com</div>
+      </a>
+      <a class="contact-tag" href="https://wa.me/2348146369615" target="_blank" rel="noopener">
+        <div class="k">WhatsApp</div><div class="v">+234 814 636 9615</div>
+      </a>
+      <a class="contact-tag" href="https://linkedin.com/in/mojutoju" target="_blank" rel="noopener">
+        <div class="k">LinkedIn</div><div class="v">linkedin.com/in/mojutoju</div>
+      </a>
+      <a class="contact-tag" href="https://behance.net/mojutojusamson" target="_blank" rel="noopener">
+        <div class="k">Behance</div><div class="v">behance.net/mojutojusamson</div>
+      </a>
+      <a class="contact-tag" href="https://github.com/mojutoju" target="_blank" rel="noopener">
+        <div class="k">GitHub</div><div class="v">github.com/mojutoju</div>
+      </a>
+      <a class="contact-tag" href="https://youtube.com/@tmcreatives" target="_blank" rel="noopener">
+        <div class="k">YouTube</div><div class="v">@tmcreatives</div>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Samson Toritseju Moju. All work shown remains property of the designer.</span>
+      <span>Designed &amp; built by Samson Moju</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="Expanded view">
+</div>
+
+<script>
+  // mobile nav
+  const burger = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('.g-item img, [data-lightbox]').forEach(el => {
+    el.addEventListener('click', () => {
+      const src = el.tagName === 'IMG' ? el.src : el.getAttribute('data-lightbox');
+      lightboxImg.src = src;
+      lightbox.classList.add('open');
+    });
+  });
+  document.getElementById('lightboxClose').addEventListener('click', () => lightbox.classList.remove('open'));
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+</script>
+</body>
+</html>
